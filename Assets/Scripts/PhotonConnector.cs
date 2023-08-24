@@ -6,6 +6,7 @@ using Photon.Pun;
 using System.IO;
 using Photon.Realtime;
 using TMPro;
+using ExitGames.Client.Photon;
 
 public class PhotonConnector : MonoBehaviourPunCallbacks
 {
@@ -15,8 +16,14 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     public GameObject PrefabTank;
     public Transform SpawPoint;
     public Transform SpawPoint1;
+    [SerializeField] public GameObject PanelCreate;
+
     // [SerializeField] private TMP_Text playerNameText;
-   
+
+    [SerializeField] public TMP_InputField input_Create;
+    [SerializeField] public TMP_InputField input_Join; 
+    [SerializeField] public TMP_InputField input_CreatePRoom;
+
 
     // List to store spawned players
     private List<GameObject> spawnedPlayers = new List<GameObject>();
@@ -27,41 +34,64 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     {
         nickname = PlayerPrefs.GetString("USERNAME");
         UIInvite.OnRoomInviteAccept += HandleRoomInviteAccept;
-    } 
+    }
     private void OnDestroy()
     {
 
         UIInvite.OnRoomInviteAccept -= HandleRoomInviteAccept;
     }
     private void Start()
-    {        
+    {
         ConnectToPhoton(nickname);
 
     }
-   
-   
+
+
     #endregion
     #region Private Methods 
-    
-    private void CreatePhotonRoom(string roomName)
-    {
-        RoomOptions ro = new RoomOptions();
-        ro.IsOpen = true;
-        ro.IsVisible = true;
-        ro.MaxPlayers = 4;
-        PhotonNetwork.JoinOrCreateRoom(roomName, ro, TypedLobby.Default);
-       
 
+    private void CreatePhotonRoom(string roomName, bool isRequestRoom)
+    {
+        RoomOptions ro = new RoomOptions
+        {
+            IsOpen = true,
+            IsVisible = true,
+            MaxPlayers = 4,
+            CustomRoomProperties = new ExitGames.Client.Photon.Hashtable
+            {
+                { "JoinRequest", isRequestRoom }
+            }
+        };
+
+        PhotonNetwork.CreateRoom(roomName, ro, TypedLobby.Default);
+        SaveRoomInfo(roomName, isRequestRoom);
     }
+
     private void ConnectToPhoton(string nickname)
     {
         Debug.Log($"Connect to Photon as {nickname}");
         PhotonNetwork.AuthValues = new AuthenticationValues(nickname);
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.NickName = nickname;
+
+        // Clear the saved room name from PlayerPrefs
+       // PlayerPrefs.SetString("PHOTONROOM", "");
         PhotonNetwork.ConnectUsingSettings();
     }
 
+
+    private void SaveRoomInfo(string roomName, bool isRequestRoom)
+    {
+        string savedRooms = PlayerPrefs.GetString("SAVED_ROOMS", "");
+
+        if (!string.IsNullOrEmpty(savedRooms))
+        {
+            savedRooms += ";";
+        }
+        savedRooms += roomName + "," + isRequestRoom.ToString();
+        PlayerPrefs.SetString("SAVED_ROOMS", savedRooms);
+    }
+  
     private void HandleRoomInviteAccept(string roomName)
     {
         PlayerPrefs.GetString("PHOTONROOM", roomName);
@@ -80,8 +110,17 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     private void JoinPlayerRoom()
     {
         string roomName = PlayerPrefs.GetString("PHOTONROOM");
-        PlayerPrefs.SetString("PHOTONROOM", "");
-        PhotonNetwork.JoinRoom(roomName);
+        if (!string.IsNullOrEmpty(roomName))
+        {
+           // PlayerPrefs.SetString("PHOTONROOM", ""); // Clear the saved room name
+
+            Debug.Log($"Attempting to join room: {roomName}");
+            PhotonNetwork.JoinRoom(roomName);
+        }
+        else
+        {
+            Debug.Log("No room name saved in PlayerPrefs.");
+        }
     }
     #endregion
     #region Public Methods
@@ -89,8 +128,10 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     {
         if (isConnectedToMaster) // Ensure you're connected to the master server
         {
-            CreatePhotonRoom(roomName);
-           
+            CreatePhotonRoom(roomName, false);
+
+            SaveRoomInfo(roomName, false); // Save the room as a public room
+
         }
         else
         {
@@ -98,26 +139,90 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
         }
 
     }
-  
+
+
+    public void CreateRoom()
+    { //PhotonNetwork.CreateRoom(input_Create.text);
+        PanelCreate.SetActive(false);
+        string roomName = input_Create.text.Trim();
+        if (!string.IsNullOrEmpty(roomName))
+        {
+            CreatePhotonRoom(roomName, false);
+            SaveRoomInfo(roomName, false);
+        }
+        else
+        {
+            Debug.LogError("Room name is empty!");
+        }
+        
+
+    }
+
+    public void CreateRequestRoom()
+    {
+        string roomName = input_CreatePRoom.text.Trim();
+        RoomOptions roomOptions = new RoomOptions
+        {
+            IsOpen = true,
+            IsVisible = true,
+            MaxPlayers = 4,
+            CustomRoomProperties = new ExitGames.Client.Photon.Hashtable { { "JoinRequest", false } } // Request needed
+        };
+
+        PhotonNetwork.CreateRoom(roomName, roomOptions);
+        SaveRoomInfo(roomName, true); // Save the room as a request room
+    }
+
+
+    public void JoinRoom()
+    {
+        PhotonNetwork.JoinRoom(input_Join.text);
+    }
+
+   
+    public void JoinRoomInList(string RoomName)
+    {
+        Debug.Log($"Joining room: {RoomName}");
+        if (isConnectedToMaster) // Ensure you're connected to the master server
+        {
+            StartCoroutine(DelayedJoin(RoomName));
+
+        }
+        else
+        {
+            Debug.LogError("Not connected to the master server yet!");
+        }
+       
+    }
+
+    private IEnumerator DelayedJoin(string roomName)
+    {
+        yield return new WaitForSeconds(0.5f); // Adjust the delay as needed
+        PhotonNetwork.JoinRoom(roomName);
+    }
+
+
     #endregion
 
     #region Photon Callbacks
     public override void OnConnectedToMaster()
     {
         Debug.Log("You have connected to the Photon Master Server");
-       
+
         isConnectedToMaster = true; // Set the flag to indicate successful connection
 
         if (!PhotonNetwork.InLobby)
         {
             PhotonNetwork.JoinLobby();
         }
-        GetPhotonFriends?.Invoke();
+                GetPhotonFriends?.Invoke();
 
     }
+   
     public override void OnJoinedLobby()
     {
         Debug.Log("You have connected to a Photon Lobby");
+      //  PlayerPrefs.SetString("SAVED_ROOMS", "");
         // CreatePhotonRoom("TestRoom");
         GetPhotonFriends?.Invoke();
         string roomName = PlayerPrefs.GetString("PHOTONROOM");
@@ -130,7 +235,10 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     }
     public override void OnCreatedRoom()
     {
+        base.OnCreatedRoom();
         Debug.Log($"You have created a Photon Room named {PhotonNetwork.CurrentRoom.Name}");
+
+        // Save room name or other information to your preferred storage mechanism
        
 
     }
@@ -138,7 +246,7 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     {
         Debug.Log($"You have joined the Photon room {PhotonNetwork.CurrentRoom.Name}");
         StartCoroutine(SpawPlayer());
-      
+
 
     }
     IEnumerator SpawPlayer()
@@ -185,19 +293,29 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     public override void OnLeftRoom()
     {
         Debug.Log("You have left a Photon room");
+        base.OnLeftRoom();
+
+        // Check if the room is empty after you left
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 0)
+        {
+            Debug.Log("You were the last player in the room. The room will be destryed.");
+            
+        }
     }
     public override void OnJoinRoomFailed(short returnCode, string message)
     {
-        Debug.Log($"You failed to join the Photon room: {message}");
+        Debug.Log($"Failed to join the room. Error code: {returnCode}, Message: {message}");
+
     }
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         Debug.Log($"Another Player has joined the room {newPlayer.UserId}");
-       
+
     }
     public override void OnPlayerLeftRoom(Player otherPlayer)
     {
         Debug.Log($" Player has left the room {otherPlayer.UserId}");
+       
     }
     public override void OnMasterClientSwitched(Player newMasterClient)
     {

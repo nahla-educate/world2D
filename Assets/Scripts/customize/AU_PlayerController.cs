@@ -3,6 +3,7 @@ using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AU_PlayerController : MonoBehaviour
 {
@@ -10,6 +11,32 @@ public class AU_PlayerController : MonoBehaviour
     public static AU_PlayerController localPlayer;
     [SerializeField] AvatarSetup avatar;
     [SerializeField] Data myData;
+    public Animator myAnim;
+
+    //components
+    //Rigidbody myRB;
+    [SerializeField] Transform myAvatar;
+    //Player mouvement
+    Vector2 movementInput;
+    // [SerializeField] InputAction WASD;
+    [SerializeField] float movementSpeed;
+
+    private Rigidbody avatarRb;
+    private Vector3 initialPosition;
+
+
+
+
+    /*
+     private void OnEnable()
+      {
+          WASD.Enable();
+      }
+
+      private void OnDisable()
+      {
+          WASD.Disable();
+      }*/
 
     // Implement the IPunObservable interface
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -35,6 +62,9 @@ public class AU_PlayerController : MonoBehaviour
     void Start()
     {
         myPV = GetComponent<PhotonView>();
+      //  myRB = GetComponent<Rigidbody>();
+
+
         if (myPV == null)
         {
             Debug.LogError("PhotonView not found on the GameObject!");
@@ -43,6 +73,10 @@ public class AU_PlayerController : MonoBehaviour
 
         if (myPV.IsMine)
         {
+            myAvatar = transform.GetChild(0);
+            avatarRb = GetComponent<Rigidbody>();
+            initialPosition = transform.position;
+
             localPlayer = this;
             if (PhotonNetwork.IsConnected) // Check if connected before synchronizing
             {
@@ -51,6 +85,106 @@ public class AU_PlayerController : MonoBehaviour
             }
         }
     }
+
+
+
+    public void MoveLeft()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            myAnim.SetBool("IsWalkingLeft", true);
+            avatarRb.velocity = new Vector3(-2f, avatarRb.velocity.y, avatarRb.velocity.z); // Adjust the horizontal speed as needed
+        }
+        else
+        {
+            myAnim.SetBool("IsWalkingLeft", false);
+            avatarRb.velocity = new Vector3(0f, avatarRb.velocity.y, avatarRb.velocity.z);
+        }
+
+    }
+
+
+    public void MoveRight()
+    {
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            myAnim.SetBool("IsWalkingRight", true);
+            avatarRb.velocity = new Vector3(2f, avatarRb.velocity.y, avatarRb.velocity.z); // Adjust the horizontal speed as needed
+        }
+        else
+        {
+            myAnim.SetBool("IsWalkingRight", false);
+            avatarRb.velocity = new Vector3(0f, avatarRb.velocity.y, avatarRb.velocity.z);
+        }
+
+
+    }
+
+    public void MoveUp()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            myAnim.SetBool("IsWalkingLeft", true);
+
+            avatarRb.velocity = new Vector3(avatarRb.velocity.x, 2f, avatarRb.velocity.z); // Adjust the vertical speed as needed
+          
+            
+        }
+        else
+        {
+            myAnim.SetBool("IsWalkingLeft", false);
+            avatarRb.velocity = new Vector3(avatarRb.velocity.x, 0f, avatarRb.velocity.z);
+        }
+
+    }
+
+    public void MoveDown()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            myAnim.SetBool("IsWalkingLeft", true);
+            avatarRb.velocity = new Vector3(avatarRb.velocity.x, -2f, avatarRb.velocity.z); // Adjust the vertical speed as needed
+        }
+        else
+        {
+            myAnim.SetBool("IsWalkingLeft", false);
+            avatarRb.velocity = new Vector3(avatarRb.velocity.x, 0f, avatarRb.velocity.z);
+
+        }
+    }
+
+
+    void Update()
+    {
+        if (!myPV.IsMine)
+            return;
+        movementInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
+      //  myAnim.SetFloat("Speed", movementInput.magnitude);
+
+        /*
+          if (movementInput.x != 0)
+          {
+
+               movementInput = WASD.ReadValue<Vector2>();
+              myAvatar.localScale = new Vector2(-Mathf.Sign(movementInput.x), 1);
+              //Debug.Log("mouvex" + movementInput);
+              //Debug.Log("mouvelo" + myAvatar.localScale);
+          }
+          myAnim.SetFloat("Speed", movementInput.magnitude);*/
+    }
+
+   /* private void FixedUpdate()
+    {
+         if (!myPV.IsMine)
+             return;
+         //myRB.velocity = movementInput * movementSpeed;
+          Vector3 newPosition = myAvatar.position + new Vector3(movementInput.x, movementInput.y, 0f);
+          myRB.MovePosition(newPosition);
+          Debug.Log("new position" + newPosition);      
+
+
+    }*/
 
     // Synchronize the avatar appearance data over the network
     public void SyncAvatar(PlayerData data)

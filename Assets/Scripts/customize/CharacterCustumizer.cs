@@ -57,26 +57,36 @@ public class CharacterCustumizer : MonoBehaviour
         PlayerPrefs.SetInt("Gender", PlayerData.instance.data.gender);
         avatar.SetAvatar(PlayerData.instance.data);
     }
+    
     public void ChangeHair(int param)
     {
-        PlayerData.instance.data.hair += param;
-        Debug.Log(PlayerData.instance.data.hair);
-        Debug.Log(avatar.hairCount);
+        /* PlayerData.instance.data.hair += param;
+         Debug.Log("hair" + PlayerData.instance.data.hair);
+         Debug.Log("count" + avatar.hairCount);
+
+         if (PlayerData.instance.data.hair >= avatar.hairCount)
+         {
+             PlayerData.instance.data.hair = 0;
+         }
+         else if (PlayerData.instance.data.hair >= 0)
+         {
+             PlayerData.instance.data.hair = avatar.hairCount - 1;
+         }
+
+         PlayerPrefs.SetInt("Hair", PlayerData.instance.data.hair);
+         avatar.SetAvatar(PlayerData.instance.data);*/
+        PlayerData.instance.data.hair++; // Increment the hair style
+        Debug.Log("hair: " + PlayerData.instance.data.hair);
+
         if (PlayerData.instance.data.hair >= avatar.hairCount)
         {
-            PlayerData.instance.data.hair = 0;
+            PlayerData.instance.data.hair = 0; // Loop back to the first style
         }
-        if (PlayerData.instance.data.hair <= 0)
-        {
-            PlayerData.instance.data.hair = avatar.hairCount -1;
-        }
-        else
-        {
-            PlayerData.instance.data.hair = avatar.hairCount - 2;
-        }
+
         PlayerPrefs.SetInt("Hair", PlayerData.instance.data.hair);
         avatar.SetAvatar(PlayerData.instance.data);
     }
+
     public void ChangeShirt(int param)
     {
         PlayerData.instance.data.shirt += param;
