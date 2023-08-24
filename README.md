@@ -7,3 +7,4 @@
 * Find room by its name and join it
 * Synchronize players
 * Avatar mouve up / down /right / left with animation
+## unity Version 2020.3.26f1
