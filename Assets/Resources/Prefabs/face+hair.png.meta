@@ -8,6 +8,15 @@ TextureImporter:
   - first:
       213: -2945761954637988145
     second: face+hair_1
+  - first:
+      213: -1699854287810309447
+    second: face+hair_2
+  - first:
+      213: 6395482837071022867
+    second: face+hair_3
+  - first:
+      213: -6751870663804671476
+    second: face+hair_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -141,7 +150,7 @@ TextureImporter:
         width: 133
         height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,7 +171,7 @@ TextureImporter:
         width: 170
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,6 +179,69 @@ TextureImporter:
       bones: []
       spriteID: fce31fc0c1d8e17d0800000000000000
       internalID: -2945761954637988145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face+hair_2
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 341
+        width: 143
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2542d0887e868e0800000000000000
+      internalID: -1699854287810309447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face+hair_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 338
+        width: 145
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bc9be61c151c850800000000000000
+      internalID: 6395482837071022867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face+hair_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 11
+        width: 150
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0aaa8a77698c42a0800000000000000
+      internalID: -6751870663804671476
       vertices: []
       indices: 
       edges: []

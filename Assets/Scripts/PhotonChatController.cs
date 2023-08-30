@@ -3,13 +3,26 @@ using Photon.Pun;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using ExitGames.Client.Photon;
 using PlayFab.ClientModels;
+using TMPro;
 
 public class PhotonChatController : MonoBehaviour, IChatClientListener
 {
     [SerializeField] private string nickname;
     private ChatClient chatClient;
+    private string recipient;
+    private string currentChannel; // Track the current chat channel
+
+
+    [SerializeField] private InputField messageInputField;
+    [SerializeField] private ScrollRect chatScrollRect;
+    [SerializeField] private RectTransform chatContent;
+
+    [SerializeField] private GameObject messagePrefab;
+
+
 
     public static Action<string, string> OnRoomInvite = delegate { };
     public static Action<ChatClient> OnChatConnected = delegate { };
@@ -39,6 +52,23 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     #endregion
 
     #region Private Methods
+    private void AddMessageToUI(string sender, string message)
+    {
+        // Load a prefab or create your TMP_Text message UI element
+        GameObject newMessagePrefab = Instantiate(messagePrefab, chatContent);
+        TMP_Text textComponent = newMessagePrefab.GetComponent<TMP_Text>();
+        textComponent.text = $"{sender}: {message}";
+
+        // Adjust the layout to account for the new message
+        LayoutRebuilder.ForceRebuildLayoutImmediate(chatContent);
+
+        // Scroll to the bottom to show the new message
+        Canvas.ForceUpdateCanvases();
+        chatScrollRect.verticalNormalizedPosition = 0f;
+    }
+
+
+
     private void ConnectToPhotonChat()
     {
         Debug.Log("Connecting to Photon chat");
@@ -58,6 +88,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         Debug.Log(PhotonNetwork.CurrentRoom.Name);
         if (chatClient != null)
         {
+            currentChannel = recipient;
             chatClient.SendPrivateMessage(recipient, PhotonNetwork.CurrentRoom.Name);
         }
         else
@@ -66,6 +97,27 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         }
 
     }
+    public void SendMessageButtonClicked()
+    {
+        string message = messageInputField.text;
+        if (!string.IsNullOrEmpty(message))
+        {
+            if (chatClient != null)
+            {
+                chatClient.SendPrivateMessage(PhotonNetwork.CurrentRoom.Name, message);
+                Debug.Log("hi" + message);
+                Debug.Log("room" + PhotonNetwork.CurrentRoom.Name);
+                AddMessageToUI(nickname, message);
+                messageInputField.text = ""; // Clear the input field after sending the message
+            }
+            else
+            {
+                Debug.LogError("chatClient is null!");
+            }
+        }
+    }
+
+
 
     #endregion
 
@@ -102,6 +154,16 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     }
     public void OnPrivateMessage(string sender, object message, string channelName)
     {
+
+        if (!string.IsNullOrEmpty(message.ToString()))
+        {
+            Debug.Log($"{sender}: {message}");
+            // Handle the received message here
+            AddMessageToUI(sender, message.ToString());
+        }
+    }
+    /*public void OnPrivateMessage(string sender, object message, string channelName)
+    {
         if (!string.IsNullOrEmpty(message.ToString()))
         {
               Debug.Log($"{sender} : {message}");
@@ -118,7 +180,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         }
 
       
-    }
+    }*/
     public void OnStatusUpdate(string user, int status, bool gotMessage, object message)
     {
         Debug.Log($"Photon Chat OnStatusUpdate: {user} changed to {status} : {message}");

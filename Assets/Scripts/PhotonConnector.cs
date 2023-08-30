@@ -18,15 +18,30 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     public Transform SpawPoint1;
     [SerializeField] public GameObject PanelCreate;
 
+    [SerializeField] public float resizeFactor = 0.1f;
+
     // [SerializeField] private TMP_Text playerNameText;
 
     [SerializeField] public TMP_InputField input_Create;
     [SerializeField] public TMP_InputField input_Join; 
     [SerializeField] public TMP_InputField input_CreatePRoom;
+    [SerializeField] AU_PlayerController avatar;
 
 
     // List to store spawned players
     private List<GameObject> spawnedPlayers = new List<GameObject>();
+    
+
+    public void OnEnableButtonClicked()
+    {
+        avatar.isKeyboardInputEnabled = true;
+    }
+
+    private void ResizePlayer()
+    {
+        // Reduce the size of the player by the specified factor
+        transform.localScale = new Vector3(resizeFactor, resizeFactor, resizeFactor);
+    }
 
 
     #region Unity Method
@@ -144,6 +159,7 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     public void CreateRoom()
     { //PhotonNetwork.CreateRoom(input_Create.text);
         PanelCreate.SetActive(false);
+        ResizePlayer();
         string roomName = input_Create.text.Trim();
         if (!string.IsNullOrEmpty(roomName))
         {
@@ -161,6 +177,7 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     public void CreateRequestRoom()
     {
         string roomName = input_CreatePRoom.text.Trim();
+        ResizePlayer();
         RoomOptions roomOptions = new RoomOptions
         {
             IsOpen = true,

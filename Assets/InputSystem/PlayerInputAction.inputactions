@@ -76,6 +76,17 @@
                 },
                 {
                     "name": "",
+                    "id": "e59d92e4-42c2-4a22-a0b7-ba4f0c59a953",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UP",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "1c7b68a0-2853-440d-86f8-63df4136866e",
                     "path": "<Keyboard>/s",
                     "interactions": "Press(behavior=2)",
@@ -90,6 +101,17 @@
                     "id": "34a4628b-ed9c-467d-b113-5bd3d96fe6a8",
                     "path": "<Keyboard>/a",
                     "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d413caf4-4683-47b6-bdf1-2f584ba9bc5e",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Left",
