@@ -36,7 +36,10 @@ public class Data
     public int hair;
     public Color hairColor;
 
-    public int shirt;
+    public int eyes;
+    public int mouth;
+
+
     public Color shirtColor;
     //  public int pants;
     //  public Color pantsColor;

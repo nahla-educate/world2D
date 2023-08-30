@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class AU_PlayerController : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class AU_PlayerController : MonoBehaviour
     [SerializeField] AvatarSetup avatar;
     [SerializeField] Data myData;
     public Animator myAnim;
+    public bool isKeyboardInputEnabled = true;
+
+
 
     //components
     //Rigidbody myRB;
@@ -62,7 +66,7 @@ public class AU_PlayerController : MonoBehaviour
     void Start()
     {
         myPV = GetComponent<PhotonView>();
-      //  myRB = GetComponent<Rigidbody>();
+        //  myRB = GetComponent<Rigidbody>();
 
 
         if (myPV == null)
@@ -84,20 +88,25 @@ public class AU_PlayerController : MonoBehaviour
                 SyncAvatar(PlayerData.instance);
             }
         }
+        
     }
+
+    
 
 
 
     public void MoveLeft()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Q))
         {
-            myAnim.SetBool("IsWalkingLeft", true);
-            avatarRb.velocity = new Vector3(-2f, avatarRb.velocity.y, avatarRb.velocity.z); // Adjust the horizontal speed as needed
+            Debug.Log("walkin a");
+            myAnim.SetBool("IsWalkingLeft", true); // Adjust the horizontal speed as needed
+            avatarRb.velocity = new Vector3(-5f, avatarRb.velocity.y, avatarRb.velocity.z);
+            
         }
         else
         {
-            myAnim.SetBool("IsWalkingLeft", false);
+            
             avatarRb.velocity = new Vector3(0f, avatarRb.velocity.y, avatarRb.velocity.z);
         }
 
@@ -109,7 +118,7 @@ public class AU_PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             myAnim.SetBool("IsWalkingRight", true);
-            avatarRb.velocity = new Vector3(2f, avatarRb.velocity.y, avatarRb.velocity.z); // Adjust the horizontal speed as needed
+            avatarRb.velocity = new Vector3(5f, avatarRb.velocity.y, avatarRb.velocity.z); // Adjust the horizontal speed as needed
         }
         else
         {
@@ -122,11 +131,10 @@ public class AU_PlayerController : MonoBehaviour
 
     public void MoveUp()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Z))
         {
             myAnim.SetBool("IsWalkingLeft", true);
-
-            avatarRb.velocity = new Vector3(avatarRb.velocity.x, 2f, avatarRb.velocity.z); // Adjust the vertical speed as needed
+            avatarRb.velocity = new Vector3(avatarRb.velocity.x, 5f, avatarRb.velocity.z); // Adjust the vertical speed as needed
           
             
         }
@@ -143,7 +151,7 @@ public class AU_PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             myAnim.SetBool("IsWalkingLeft", true);
-            avatarRb.velocity = new Vector3(avatarRb.velocity.x, -2f, avatarRb.velocity.z); // Adjust the vertical speed as needed
+            avatarRb.velocity = new Vector3(avatarRb.velocity.x, -5f, avatarRb.velocity.z); // Adjust the vertical speed as needed
         }
         else
         {
@@ -152,15 +160,71 @@ public class AU_PlayerController : MonoBehaviour
 
         }
     }
+    
+
+
 
 
     void Update()
     {
         if (!myPV.IsMine)
             return;
-        movementInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        if (isKeyboardInputEnabled == true)
+        {
+            // Process input only when keyboard input is enabled
+            movementInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Z))
+            {
+                myAnim.SetBool("IsWalkingLeft", true);
+                avatarRb.velocity = new Vector3(avatarRb.velocity.x, 5f, avatarRb.velocity.z); // Adjust the vertical speed as needed
 
-      //  myAnim.SetFloat("Speed", movementInput.magnitude);
+
+            }
+            else
+            {
+                myAnim.SetBool("IsWalkingLeft", false);
+                avatarRb.velocity = new Vector3(avatarRb.velocity.x, 0f, avatarRb.velocity.z);
+            }
+
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                myAnim.SetBool("IsWalkingRight", true);
+                avatarRb.velocity = new Vector3(5f, avatarRb.velocity.y, avatarRb.velocity.z); // Adjust the horizontal speed as needed
+            }
+            else
+            {
+                myAnim.SetBool("IsWalkingRight", false);
+                avatarRb.velocity = new Vector3(0f, avatarRb.velocity.y, avatarRb.velocity.z);
+            }
+            //down
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                myAnim.SetBool("IsWalkingLeft", true);
+                avatarRb.velocity = new Vector3(avatarRb.velocity.x, -5f, avatarRb.velocity.z); // Adjust the vertical speed as needed
+            }
+            else
+            {
+                myAnim.SetBool("IsWalkingLeft", false);
+                avatarRb.velocity = new Vector3(avatarRb.velocity.x, 0f, avatarRb.velocity.z);
+
+            }
+
+            //left
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Q))
+            {
+                Debug.Log("walkin a");
+                myAnim.SetBool("IsWalkingLeft", true); // Adjust the horizontal speed as needed
+                avatarRb.velocity = new Vector3(-5f, avatarRb.velocity.y, avatarRb.velocity.z);
+
+            }
+            else
+            {
+
+                avatarRb.velocity = new Vector3(0f, avatarRb.velocity.y, avatarRb.velocity.z);
+            }
+        }
+
+        //  myAnim.SetFloat("Speed", movementInput.magnitude);
 
         /*
           if (movementInput.x != 0)
