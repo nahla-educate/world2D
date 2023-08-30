@@ -604,6 +604,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &18695961
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +905,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21017232}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &22326876
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,6 +1678,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56307540}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &57888624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,6 +1829,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58208415}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &61088573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2133,6 +2139,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!1 &65008867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2283,6 +2290,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66879329}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &74872452
 GameObject:
   m_ObjectHideFlags: 0
@@ -2795,6 +2804,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81378254}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &83576034
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,6 +2880,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83576034}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &92442535
 GameObject:
   m_ObjectHideFlags: 0
@@ -3394,6 +3406,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119857299}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &126954072
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,6 +3557,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130432928}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &132525726
 GameObject:
   m_ObjectHideFlags: 0
@@ -4609,6 +4624,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176734012}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &178462889
 GameObject:
   m_ObjectHideFlags: 0
@@ -4684,6 +4700,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178462889}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &179647980
 GameObject:
   m_ObjectHideFlags: 0
@@ -5774,6 +5792,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200902024}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &202497620
 GameObject:
   m_ObjectHideFlags: 0
@@ -5849,6 +5868,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202497620}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &208552913
 GameObject:
   m_ObjectHideFlags: 0
@@ -6103,6 +6124,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228607381}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &235427151
 GameObject:
   m_ObjectHideFlags: 0
@@ -6213,6 +6235,8 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &239285181
 GameObject:
   m_ObjectHideFlags: 0
@@ -6483,6 +6507,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239772324}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &241571234
 GameObject:
   m_ObjectHideFlags: 0
@@ -6633,6 +6658,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246182272}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &246207786
 GameObject:
   m_ObjectHideFlags: 0
@@ -6800,6 +6827,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247029036}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &253289394
 GameObject:
   m_ObjectHideFlags: 0
@@ -6875,6 +6903,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253289394}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &256876273
 GameObject:
   m_ObjectHideFlags: 0
@@ -7228,6 +7258,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265052347}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &270182665
 GameObject:
   m_ObjectHideFlags: 0
@@ -7470,6 +7501,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277040446}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &277146818
 GameObject:
   m_ObjectHideFlags: 0
@@ -8158,6 +8191,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310655816}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &312484931
 GameObject:
   m_ObjectHideFlags: 0
@@ -8297,6 +8331,8 @@ RectTransform:
   m_AnchoredPosition: {x: 454, y: -7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &315134045
 GameObject:
   m_ObjectHideFlags: 0
@@ -8417,6 +8453,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315134045}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &332648667
 GameObject:
   m_ObjectHideFlags: 0
@@ -8492,6 +8529,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332648667}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &334695184
 GameObject:
   m_ObjectHideFlags: 0
@@ -9402,6 +9441,7 @@ Transform:
   m_Father: {fileID: 1481039672}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &351934362
 GameObject:
   m_ObjectHideFlags: 0
@@ -9477,6 +9517,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351934362}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &358054463
 GameObject:
   m_ObjectHideFlags: 0
@@ -9729,6 +9771,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361350658}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &361767840
 GameObject:
   m_ObjectHideFlags: 0
@@ -9879,6 +9922,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362185467}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1001 &365719744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10586,6 +10631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+<<<<<<< HEAD
 --- !u!1 &393285877
 GameObject:
   m_ObjectHideFlags: 0
@@ -10661,6 +10707,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393285877}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &409331433
 GameObject:
   m_ObjectHideFlags: 0
@@ -12102,6 +12150,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450469639}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &452799364
 GameObject:
   m_ObjectHideFlags: 0
@@ -12402,6 +12451,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461997012}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &470362959
 GameObject:
   m_ObjectHideFlags: 0
@@ -12522,6 +12573,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470362959}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &474511094
 GameObject:
   m_ObjectHideFlags: 0
@@ -12597,6 +12649,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474511094}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &477743757
 GameObject:
   m_ObjectHideFlags: 0
@@ -12717,6 +12771,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 477743757}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &479523190
 GameObject:
   m_ObjectHideFlags: 0
@@ -12792,6 +12847,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479523190}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &481403046
 GameObject:
   m_ObjectHideFlags: 0
@@ -13205,6 +13262,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 --- !u!1 &515608131
 GameObject:
   m_ObjectHideFlags: 0
@@ -13280,6 +13338,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515608131}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &516186297
 GameObject:
   m_ObjectHideFlags: 0
@@ -13961,6 +14021,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531683964}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &537294923
 GameObject:
   m_ObjectHideFlags: 0
@@ -14036,6 +14097,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537294923}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &538187614
 GameObject:
   m_ObjectHideFlags: 0
@@ -14156,6 +14219,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538187614}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &538272604
 GameObject:
   m_ObjectHideFlags: 0
@@ -14231,6 +14295,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538272604}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &538741371
 GameObject:
   m_ObjectHideFlags: 0
@@ -14351,6 +14417,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538741371}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &545389809
 GameObject:
   m_ObjectHideFlags: 0
@@ -14426,6 +14493,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545389809}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &545916702
 GameObject:
   m_ObjectHideFlags: 0
@@ -15082,6 +15151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   friendContainer: {fileID: 1118230067}
   uiFriendPrefab: {fileID: 4263372659355945769, guid: 6168897ce2ace2b4a875e2d19a2deff6, type: 3}
+<<<<<<< HEAD
 --- !u!1 &553154692
 GameObject:
   m_ObjectHideFlags: 0
@@ -15457,6 +15527,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554831027}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &554911225
 GameObject:
   m_ObjectHideFlags: 0
@@ -15503,6 +15575,7 @@ RectTransform:
   m_AnchoredPosition: {x: -206.25, y: -51.249985}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 --- !u!1 &564823113
 GameObject:
   m_ObjectHideFlags: 0
@@ -15578,6 +15651,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564823113}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &566405345
 GameObject:
   m_ObjectHideFlags: 0
@@ -15698,6 +15773,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566405345}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &567404026
 GameObject:
   m_ObjectHideFlags: 0
@@ -15848,6 +15924,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567548363}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &577504562
 GameObject:
   m_ObjectHideFlags: 0
@@ -16371,6 +16449,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584192695}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &585574134
 GameObject:
   m_ObjectHideFlags: 0
@@ -16446,6 +16525,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585574134}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &590130514
 GameObject:
   m_ObjectHideFlags: 0
@@ -16580,6 +16661,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590130514}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &598693380
 GameObject:
   m_ObjectHideFlags: 0
@@ -16655,6 +16737,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598693380}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &600573668
 GameObject:
   m_ObjectHideFlags: 0
@@ -16702,6 +16786,7 @@ RectTransform:
   m_AnchoredPosition: {x: -195, y: -97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 --- !u!1 &609817903
 GameObject:
   m_ObjectHideFlags: 0
@@ -17009,6 +17094,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622651582}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &628984128
 GameObject:
   m_ObjectHideFlags: 0
@@ -17246,7 +17333,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631416366}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &635481903
+=======
+--- !u!1 &638638849
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17254,22 +17345,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 635481904}
   - component: {fileID: 635481906}
   - component: {fileID: 635481905}
   m_Layer: 5
   m_Name: Image (63)
+=======
+  - component: {fileID: 638638850}
+  - component: {fileID: 638638853}
+  - component: {fileID: 638638852}
+  - component: {fileID: 638638851}
+  m_Layer: 5
+  m_Name: Style9
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 0
 --- !u!224 &635481904
+=======
+  m_IsActive: 1
+--- !u!224 &638638850
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 635481903}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -17284,14 +17390,93 @@ RectTransform:
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &635481905
+=======
+  m_GameObject: {fileID: 638638849}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.014, y: 2.014, z: 2.014}
+  m_Children:
+  - {fileID: 1421726929}
+  m_Father: {fileID: 505155804}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -33.25, y: -227.25002}
+  m_SizeDelta: {x: 55, y: 55.57}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &638638851
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 635481903}
   m_Enabled: 1
   m_EditorHideFlags: 0
+=======
+  m_GameObject: {fileID: 638638849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 638638852}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1880779008}
+        m_TargetAssemblyTypeName: CharacterCustumizer, Assembly-CSharp
+        m_MethodName: ChangeH
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &638638852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638638849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -17303,8 +17488,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: 5e8f5a6a910c6e441875017f2931f465, type: 3}
   m_Type: 0
+=======
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -17313,12 +17503,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+<<<<<<< HEAD
 --- !u!222 &635481906
+=======
+--- !u!222 &638638853
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 635481903}
   m_CullTransparentMesh: 1
 --- !u!1 &638638849
@@ -17452,6 +17647,8 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
   m_GameObject: {fileID: 638638849}
   m_CullTransparentMesh: 1
 --- !u!1 &643265416
@@ -17663,6 +17860,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645899550}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &649475992
 GameObject:
   m_ObjectHideFlags: 0
@@ -17813,6 +18011,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652192889}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &654356279
 GameObject:
   m_ObjectHideFlags: 0
@@ -18064,6 +18264,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7455250533953865521, guid: 98914e5a7753ad14e8113dd87a092e51, type: 3}
   m_PrefabInstance: {fileID: 661694325}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &662693547
 GameObject:
   m_ObjectHideFlags: 0
@@ -18139,6 +18340,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662693547}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &675226696
 GameObject:
   m_ObjectHideFlags: 0
@@ -18259,6 +18462,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675226696}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &684062738
 GameObject:
   m_ObjectHideFlags: 0
@@ -18409,6 +18613,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686884932}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &690605127
 GameObject:
   m_ObjectHideFlags: 0
@@ -18529,6 +18735,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690605127}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &693697866
 GameObject:
   m_ObjectHideFlags: 0
@@ -18604,6 +18811,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693697866}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &708242238
 GameObject:
   m_ObjectHideFlags: 0
@@ -18738,6 +18947,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708242238}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &708285378
 GameObject:
   m_ObjectHideFlags: 0
@@ -18813,6 +19023,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708285378}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &711618185
 GameObject:
   m_ObjectHideFlags: 0
@@ -18933,6 +19145,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711618185}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &713298422
 GameObject:
   m_ObjectHideFlags: 0
@@ -19133,6 +19346,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725800814}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &737897034
 GameObject:
   m_ObjectHideFlags: 0
@@ -19253,6 +19468,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737897034}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &740890179
 GameObject:
   m_ObjectHideFlags: 0
@@ -19403,6 +19619,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741226146}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &751300203
 GameObject:
   m_ObjectHideFlags: 0
@@ -19523,6 +19741,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751300203}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &752980116
 GameObject:
   m_ObjectHideFlags: 0
@@ -19673,6 +19892,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770267691}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &774570873
 GameObject:
   m_ObjectHideFlags: 0
@@ -20047,6 +20268,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790497792}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &790665035
 GameObject:
   m_ObjectHideFlags: 0
@@ -20279,6 +20501,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &799532895
 GameObject:
   m_ObjectHideFlags: 0
@@ -20482,6 +20706,7 @@ MonoBehaviour:
   createPublicRoom: {fileID: 417352738}
   createPrivateRoom: {fileID: 1847883004}
   chat: {fileID: 1284950344}
+<<<<<<< HEAD
 --- !u!1 &803474807
 GameObject:
   m_ObjectHideFlags: 0
@@ -20557,6 +20782,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803474807}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &803764163
 GameObject:
   m_ObjectHideFlags: 0
@@ -22365,6 +22592,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864412527}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &871628027
 GameObject:
   m_ObjectHideFlags: 0
@@ -23040,6 +23268,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896015552}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &899620772
 GameObject:
   m_ObjectHideFlags: 0
@@ -24318,6 +24548,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937740224}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &943319856
 GameObject:
   m_ObjectHideFlags: 0
@@ -24393,6 +24624,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943319856}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &946980951
 GameObject:
   m_ObjectHideFlags: 0
@@ -24733,6 +24966,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965125169}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &965586572
 GameObject:
   m_ObjectHideFlags: 0
@@ -24808,6 +25042,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965586572}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &968160927
 GameObject:
   m_ObjectHideFlags: 0
@@ -25410,6 +25646,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 --- !u!1 &980053655
 GameObject:
   m_ObjectHideFlags: 0
@@ -25485,6 +25722,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980053655}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &981717819
 GameObject:
   m_ObjectHideFlags: 0
@@ -25515,6 +25754,7 @@ Transform:
   m_Father: {fileID: 899620773}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &982083303
 GameObject:
   m_ObjectHideFlags: 0
@@ -25590,6 +25830,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982083303}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &983675129
 GameObject:
   m_ObjectHideFlags: 0
@@ -26002,6 +26244,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988304379}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &993931801
 GameObject:
   m_ObjectHideFlags: 0
@@ -26077,6 +26320,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993931801}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &999654658
 GameObject:
   m_ObjectHideFlags: 0
@@ -26409,6 +26654,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002635998}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1004725503
 GameObject:
   m_ObjectHideFlags: 0
@@ -26559,6 +26805,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010286714}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1022385482
 GameObject:
   m_ObjectHideFlags: 0
@@ -27368,6 +27616,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045284677}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1046893288
 GameObject:
   m_ObjectHideFlags: 0
@@ -27593,6 +27842,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057631305}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1057870104
 GameObject:
   m_ObjectHideFlags: 0
@@ -27645,6 +27896,7 @@ RectTransform:
   m_AnchoredPosition: {x: -206.25002, y: -51.249985}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 --- !u!1 &1072667508
 GameObject:
   m_ObjectHideFlags: 0
@@ -27720,6 +27972,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072667508}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1073753183
 GameObject:
   m_ObjectHideFlags: 0
@@ -28298,6 +28552,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097386425}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1099572694
 GameObject:
   m_ObjectHideFlags: 0
@@ -28483,6 +28738,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106375330}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1107383329
 GameObject:
   m_ObjectHideFlags: 0
@@ -28558,6 +28815,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107383329}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1110315860
 GameObject:
   m_ObjectHideFlags: 0
@@ -28689,6 +28947,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111422612}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1116152839
 GameObject:
   m_ObjectHideFlags: 0
@@ -29647,6 +29907,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135120407}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1137376067
 GameObject:
   m_ObjectHideFlags: 0
@@ -29722,6 +29983,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137376067}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1140587672
 GameObject:
   m_ObjectHideFlags: 0
@@ -29858,6 +30121,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140587672}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1142472390
 GameObject:
   m_ObjectHideFlags: 0
@@ -29933,6 +30197,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142472390}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1143797086
 GameObject:
   m_ObjectHideFlags: 0
@@ -30173,6 +30439,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148214116}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1150002448
 GameObject:
   m_ObjectHideFlags: 0
@@ -30248,6 +30515,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150002448}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1150375554
 GameObject:
   m_ObjectHideFlags: 0
@@ -30488,6 +30757,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150434973}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1163654472
 GameObject:
   m_ObjectHideFlags: 0
@@ -30563,6 +30833,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163654472}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1165118593
 GameObject:
   m_ObjectHideFlags: 0
@@ -30602,6 +30874,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 --- !u!1 &1165818435
 GameObject:
   m_ObjectHideFlags: 0
@@ -30677,6 +30950,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165818435}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1166043045
 GameObject:
   m_ObjectHideFlags: 0
@@ -31181,6 +31456,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191959082}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1194270577
 GameObject:
   m_ObjectHideFlags: 0
@@ -31331,6 +31607,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194998655}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1197066696
 GameObject:
   m_ObjectHideFlags: 0
@@ -31598,6 +31876,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199219145}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1203853135
 GameObject:
   m_ObjectHideFlags: 0
@@ -31823,6 +32102,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207647680}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1210937165
 GameObject:
   m_ObjectHideFlags: 0
@@ -32218,6 +32499,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1726503313139348084, guid: a5c1272f8a5314e488cc290a63ec475f, type: 3}
   m_PrefabInstance: {fileID: 1230993445}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &1233210984
 GameObject:
   m_ObjectHideFlags: 0
@@ -32293,6 +32575,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233210984}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1234812934
 GameObject:
   m_ObjectHideFlags: 0
@@ -32595,6 +32879,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1248267277
 GameObject:
   m_ObjectHideFlags: 0
@@ -32670,6 +32955,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248267277}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1249088031
 GameObject:
   m_ObjectHideFlags: 0
@@ -32783,6 +33070,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+<<<<<<< HEAD
 --- !u!1 &1254897610
 GameObject:
   m_ObjectHideFlags: 0
@@ -32933,6 +33221,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262067513}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1263799238
 GameObject:
   m_ObjectHideFlags: 0
@@ -33350,6 +33640,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270458614}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1274287197
 GameObject:
   m_ObjectHideFlags: 0
@@ -33575,6 +33866,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279560557}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1284950344
 GameObject:
   m_ObjectHideFlags: 0
@@ -34196,6 +34489,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+<<<<<<< HEAD
 --- !u!1 &1304706838
 GameObject:
   m_ObjectHideFlags: 0
@@ -34646,6 +34940,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326197125}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1328171594
 GameObject:
   m_ObjectHideFlags: 0
@@ -35490,6 +35786,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373036077}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1375453030
 GameObject:
   m_ObjectHideFlags: 0
@@ -35565,6 +35862,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375453030}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1384510520
 GameObject:
   m_ObjectHideFlags: 0
@@ -36099,6 +36398,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397828374}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1401186439
 GameObject:
   m_ObjectHideFlags: 0
@@ -36134,6 +36434,8 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1407415104
 GameObject:
   m_ObjectHideFlags: 0
@@ -36267,6 +36569,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407415104}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1412244915
 GameObject:
   m_ObjectHideFlags: 0
@@ -36342,6 +36645,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412244915}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1414971965
 GameObject:
   m_ObjectHideFlags: 0
@@ -36788,6 +37093,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 --- !u!1 &1426757326
 GameObject:
   m_ObjectHideFlags: 0
@@ -36908,6 +37214,8 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1438153644
 GameObject:
   m_ObjectHideFlags: 0
@@ -37058,6 +37366,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1444526579
 GameObject:
   m_ObjectHideFlags: 0
@@ -37358,6 +37667,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452674272}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1454457616
 GameObject:
   m_ObjectHideFlags: 0
@@ -37433,6 +37744,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454457616}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1456937470
 GameObject:
   m_ObjectHideFlags: 0
@@ -37508,6 +37820,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456937470}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1460545637
 GameObject:
   m_ObjectHideFlags: 0
@@ -38001,6 +38315,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466114591}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1476775836
 GameObject:
   m_ObjectHideFlags: 0
@@ -38076,6 +38391,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476775836}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1481039671
 GameObject:
   m_ObjectHideFlags: 0
@@ -38154,6 +38471,7 @@ RectTransform:
   m_AnchoredPosition: {x: -195, y: -97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 --- !u!1 &1483357793
 GameObject:
   m_ObjectHideFlags: 0
@@ -38529,6 +38847,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495966932}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1500234401
 GameObject:
   m_ObjectHideFlags: 0
@@ -39025,6 +39345,7 @@ Transform:
   m_Father: {fileID: 812656859}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1521926259
 GameObject:
   m_ObjectHideFlags: 0
@@ -39100,6 +39421,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521926259}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1524419968
 GameObject:
   m_ObjectHideFlags: 0
@@ -39704,6 +40027,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531625936}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1534264116
 GameObject:
   m_ObjectHideFlags: 0
@@ -39779,6 +40103,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534264116}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1540954751
 GameObject:
   m_ObjectHideFlags: 0
@@ -40145,6 +40471,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545114501}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1547258201
 GameObject:
   m_ObjectHideFlags: 0
@@ -40220,6 +40547,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547258201}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1561577662
 GameObject:
   m_ObjectHideFlags: 0
@@ -40460,6 +40789,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563078000}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1563193728
 GameObject:
   m_ObjectHideFlags: 0
@@ -40685,6 +41015,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568438643}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1579236373
 GameObject:
   m_ObjectHideFlags: 0
@@ -41163,6 +41495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 492.125, y: 286.25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -41391,6 +41724,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595108814}
   m_CullTransparentMesh: 1
+=======
+  m_AnchoredPosition: {x: 482.12497, y: 286.25}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1596626504
 GameObject:
   m_ObjectHideFlags: 0
@@ -41590,6 +41928,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606195392}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1607741095
 GameObject:
   m_ObjectHideFlags: 0
@@ -41740,6 +42079,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618306452}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1618874671
 GameObject:
   m_ObjectHideFlags: 0
@@ -42355,6 +42696,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636716702}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1640979033
 GameObject:
   m_ObjectHideFlags: 0
@@ -42430,6 +42772,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640979033}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1645492789
 GameObject:
   m_ObjectHideFlags: 0
@@ -42684,6 +43028,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645592642}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1648214935
 GameObject:
   m_ObjectHideFlags: 0
@@ -42984,6 +43329,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665437703}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1671916505
 GameObject:
   m_ObjectHideFlags: 0
@@ -43117,6 +43464,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671916505}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1672132995
 GameObject:
   m_ObjectHideFlags: 0
@@ -43192,6 +43540,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672132995}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1672858667
 GameObject:
   m_ObjectHideFlags: 0
@@ -43402,6 +43752,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673796840}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1680504003
 GameObject:
   m_ObjectHideFlags: 0
@@ -43484,6 +43835,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1684172269
 GameObject:
   m_ObjectHideFlags: 0
@@ -43724,6 +44077,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688023872}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1689451093
 GameObject:
   m_ObjectHideFlags: 0
@@ -43799,6 +44153,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689451093}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1690916510
 GameObject:
   m_ObjectHideFlags: 0
@@ -43899,7 +44255,10 @@ RectTransform:
   - {fileID: 1847883005}
   - {fileID: 1999216063}
   - {fileID: 1284950345}
+<<<<<<< HEAD
   - {fileID: 716617659}
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44148,6 +44507,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702732683}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1709223360
 GameObject:
   m_ObjectHideFlags: 0
@@ -44448,6 +44808,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719342752}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1724170107
 GameObject:
   m_ObjectHideFlags: 0
@@ -45955,6 +46317,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769742303}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1771689638
 GameObject:
   m_ObjectHideFlags: 0
@@ -45990,6 +46353,8 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1779787738
 GameObject:
   m_ObjectHideFlags: 0
@@ -46122,6 +46487,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779787738}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1779869283
 GameObject:
   m_ObjectHideFlags: 0
@@ -46197,6 +46563,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779869283}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1784322124
 GameObject:
   m_ObjectHideFlags: 0
@@ -46399,6 +46767,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785155857}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1785560072
 GameObject:
   m_ObjectHideFlags: 0
@@ -46474,6 +46843,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785560072}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1787186664
 GameObject:
   m_ObjectHideFlags: 0
@@ -47441,6 +47812,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806488664}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1807317705
 GameObject:
   m_ObjectHideFlags: 0
@@ -47516,6 +47888,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807317705}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1811689856
 GameObject:
   m_ObjectHideFlags: 0
@@ -47552,6 +47926,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 --- !u!1 &1824117948
 GameObject:
   m_ObjectHideFlags: 0
@@ -47927,6 +48302,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836063344}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1847883004
 GameObject:
   m_ObjectHideFlags: 0
@@ -47964,6 +48341,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 --- !u!1 &1850895168
 GameObject:
   m_ObjectHideFlags: 0
@@ -48039,6 +48417,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850895168}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1862695071
 GameObject:
   m_ObjectHideFlags: 0
@@ -48413,6 +48793,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863639603}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1864080070
 GameObject:
   m_ObjectHideFlags: 0
@@ -48563,6 +48944,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864096263}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1864270837
 GameObject:
   m_ObjectHideFlags: 0
@@ -49080,6 +49463,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873937354}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1874896993
 GameObject:
   m_ObjectHideFlags: 0
@@ -49155,6 +49539,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874896993}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1880779007
 GameObject:
   m_ObjectHideFlags: 0
@@ -49215,6 +49601,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
+<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1884067587
 GameObject:
@@ -49448,6 +49835,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1896343209
 GameObject:
   m_ObjectHideFlags: 0
@@ -50135,6 +50525,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937526536}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1937802340
 GameObject:
   m_ObjectHideFlags: 0
@@ -50210,6 +50601,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937802340}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1940808881
 GameObject:
   m_ObjectHideFlags: 0
@@ -50638,6 +51031,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945755702}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1946657390
 GameObject:
   m_ObjectHideFlags: 0
@@ -50713,6 +51107,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946657390}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1001 &1947293592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50794,6 +51190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89854870ffc40c4c97faa5738c9c6a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!1 &1948769365
 GameObject:
   m_ObjectHideFlags: 0
@@ -50869,6 +51266,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948769365}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1949198849
 GameObject:
   m_ObjectHideFlags: 0
@@ -51319,7 +51718,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959916133}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1962733497
+=======
+--- !u!1 &1991276828
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51327,20 +51730,34 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 1962733498}
   m_Layer: 5
   m_Name: road
+=======
+  - component: {fileID: 1991276829}
+  - component: {fileID: 1991276832}
+  - component: {fileID: 1991276831}
+  - component: {fileID: 1991276830}
+  m_Layer: 5
+  m_Name: Color2 (2)
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!224 &1962733498
+=======
+--- !u!224 &1991276829
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1962733497}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -51434,6 +51851,8 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
   m_GameObject: {fileID: 1991276828}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -51529,6 +51948,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991276828}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1992727480
 GameObject:
   m_ObjectHideFlags: 0
@@ -51604,6 +52024,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992727480}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &1999170694
 GameObject:
   m_ObjectHideFlags: 0
@@ -52456,6 +52878,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040632420}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &2044518078
 GameObject:
   m_ObjectHideFlags: 0
@@ -52531,6 +52954,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044518078}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &2048274058
 GameObject:
   m_ObjectHideFlags: 0
@@ -52651,6 +53076,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048274058}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &2050448241
 GameObject:
   m_ObjectHideFlags: 0
@@ -52726,6 +53152,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050448241}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &2054834804
 GameObject:
   m_ObjectHideFlags: 0
@@ -53408,6 +53836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialized: 0
   friendList: []
+<<<<<<< HEAD
 --- !u!1 &2079765430
 GameObject:
   m_ObjectHideFlags: 0
@@ -53490,6 +53919,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &2083652128
 GameObject:
   m_ObjectHideFlags: 0
@@ -53685,6 +54116,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088529311}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &2096122099
 GameObject:
   m_ObjectHideFlags: 0
@@ -53835,6 +54267,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099210724}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &2102823213
 GameObject:
   m_ObjectHideFlags: 0
@@ -54315,6 +54749,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2116579439}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &2119935068
 GameObject:
   m_ObjectHideFlags: 0
@@ -54390,6 +54825,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119935068}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &2122214874
 GameObject:
   m_ObjectHideFlags: 0
@@ -54756,6 +55193,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125649423}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &2127301683
 GameObject:
   m_ObjectHideFlags: 0
@@ -54831,6 +55269,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127301683}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &2131035217
 GameObject:
   m_ObjectHideFlags: 0
@@ -55011,6 +55451,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133614262}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &2137301045
 GameObject:
   m_ObjectHideFlags: 0
@@ -55236,6 +55677,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143289008}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24
 --- !u!1 &2143873868
 GameObject:
   m_ObjectHideFlags: 0
