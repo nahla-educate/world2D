@@ -11,10 +11,13 @@ using System.Linq;
 public class PhotonFriendController : MonoBehaviourPunCallbacks
 {
     public static Action<List<PhotonFriendInfo>> OnDisplayFriends = delegate { };
+
     private void Awake()
     {
         PlayfabFriendController.OnFriendListUpdated += HandleFriendsUpdated;
     }
+
+    
 
     private void OnDestroy()
     {
@@ -26,7 +29,12 @@ public class PhotonFriendController : MonoBehaviourPunCallbacks
         if(friends.Count != 0)
         {
             string[] friendDisplayNames = friends.Select(f => f.TitleDisplayName).ToArray();
-            PhotonNetwork.FindFriends(friendDisplayNames);
+            Debug.Log(friendDisplayNames);
+            if (PhotonNetwork.IsConnected)
+            {
+                PhotonNetwork.FindFriends(friendDisplayNames);
+                Debug.Log(friendDisplayNames);
+            }
 
         }
         else

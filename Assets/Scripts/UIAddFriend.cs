@@ -18,6 +18,7 @@ public class UIAddFriend : MonoBehaviour
     {        
         if (string.IsNullOrEmpty(displayName)) return;
         Debug.Log("see");
-        OnAddFriend?.Invoke(displayName); Debug.Log("see");
+        OnAddFriend?.Invoke(displayName); 
+        Debug.Log("yes");
     }
 }

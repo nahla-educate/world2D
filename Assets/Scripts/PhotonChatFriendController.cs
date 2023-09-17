@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -88,6 +89,7 @@ public class PhotonChatFriendController : MonoBehaviour
             initialized = true;
             string[] friendDisplayNames = friendList.ToArray();
             chatClient.AddFriends(friendDisplayNames);
+            
         }
         OnDisplayFriends?.Invoke(friendList);
     }

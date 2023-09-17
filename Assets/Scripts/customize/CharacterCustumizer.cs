@@ -8,17 +8,21 @@ public class CharacterCustumizer : MonoBehaviour
 {
     //[SerializeField] Transform[] cameraPosition; // Define the array
 
-   // [SerializeField] GameObject mainMenu;
-   // [SerializeField] GameObject avatarMenu;
-    //[SerializeField] GameObject monsterMenu;
-
+   
     [SerializeField] AvatarSetup avatar;
-   // [SerializeField] AvatarSetup avatar2;
+    // [SerializeField] AvatarSetup avatar2;
+
+    private int selectedHairColorIndex = 0;
 
 
-    [SerializeField] Color[] defaultColors;
+    [SerializeField] Color[] hairColors;
+
 
     [SerializeField] Image hairButton;
+    void start()
+    {
+        PlayerData.instance.data.hair = 0;
+    }
 
     //[SerializeField] Image shirtButton;
     // [SerializeField] Image pantsButton;
@@ -32,15 +36,11 @@ public class CharacterCustumizer : MonoBehaviour
 
     public void OpenMainMenu()
     {
-        mainMenu.SetActive(true);
-        avatarMenu.SetActive(false);
         Camera.main.transform.position = cameraPosition[0].position;
     }
 
     public void OpenAvatarCustomizer()
     {
-        mainMenu.SetActive(false);
-        avatarMenu.SetActive(true);
         Camera.main.transform.position = cameraPosition[1].position;
     }*/
     public void ChangeGender()
@@ -57,24 +57,46 @@ public class CharacterCustumizer : MonoBehaviour
         PlayerPrefs.SetInt("Gender", PlayerData.instance.data.gender);
         avatar.SetAvatar(PlayerData.instance.data);
     }
-    
-    public void ChangeHair(int param)
+    public void ChangeH(int param)
     {
-        /* PlayerData.instance.data.hair += param;
-         Debug.Log("hair" + PlayerData.instance.data.hair);
-         Debug.Log("count" + avatar.hairCount);
+        PlayerData.instance.data.hair = param;
+        PlayerData.instance.data.hairColor = hairColors[param]; // Set default color for the selected style
+        Debug.Log("hair: " + PlayerData.instance.data.hair);
+        Debug.Log("hairCount: " + avatar.hairCount);
 
-         if (PlayerData.instance.data.hair >= avatar.hairCount)
-         {
-             PlayerData.instance.data.hair = 0;
-         }
-         else if (PlayerData.instance.data.hair >= 0)
-         {
-             PlayerData.instance.data.hair = avatar.hairCount - 1;
-         }
+        PlayerPrefs.SetInt("Hair", PlayerData.instance.data.hair);
+        avatar.SetAvatar(PlayerData.instance.data);
+    }
 
-         PlayerPrefs.SetInt("Hair", PlayerData.instance.data.hair);
-         avatar.SetAvatar(PlayerData.instance.data);*/
+    public void ChangeMouth(int param)
+    {
+        PlayerData.instance.data.mouth = param;
+        Debug.Log("mouth: " + PlayerData.instance.data.mouth);
+        Debug.Log("mouthCount: " + avatar.mouthCount);
+
+        PlayerPrefs.SetInt("Mouth", PlayerData.instance.data.mouth);
+        avatar.SetAvatar(PlayerData.instance.data);
+    }
+
+    public void ChangeEyes(int param)
+    {
+        PlayerData.instance.data.eyes = param;
+        Debug.Log("eyes: " + PlayerData.instance.data.eyes);
+        Debug.Log("eyesCount: " + avatar.eyesCount);
+
+        PlayerPrefs.SetInt("Eyes", PlayerData.instance.data.eyes);
+        avatar.SetAvatar(PlayerData.instance.data);
+    }
+    public void ChangeHairColor(int colorIndex)
+    {
+        PlayerData.instance.data.hairColor = hairColors[colorIndex];
+        avatar.SetAvatar(PlayerData.instance.data);
+    }
+
+
+
+    /*public void ChangeHair(int param)
+    {
         PlayerData.instance.data.hair++; // Increment the hair style
         Debug.Log("hair: " + PlayerData.instance.data.hair);
 
@@ -85,21 +107,8 @@ public class CharacterCustumizer : MonoBehaviour
 
         PlayerPrefs.SetInt("Hair", PlayerData.instance.data.hair);
         avatar.SetAvatar(PlayerData.instance.data);
-    }
+    }*/
 
-    public void ChangeShirt(int param)
-    {
-        PlayerData.instance.data.shirt += param;
-        if (PlayerData.instance.data.shirt >= avatar.shirtCount)
-        {
-            PlayerData.instance.data.shirt = 0;
-        }
-        if (PlayerData.instance.data.shirt < 0)
-        {
-            PlayerData.instance.data.shirt = avatar.shirtCount - 1;
-        }
-        PlayerPrefs.SetInt("Shirt", PlayerData.instance.data.shirt);
-        avatar.SetAvatar(PlayerData.instance.data);
-    }
+
 }
 

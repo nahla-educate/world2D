@@ -42,6 +42,12 @@ MonoBehaviour:
   - RPC_ChangeHairColor
   - RPC_SyncAvatar
   - UpdatePosition
+  - ResizePlayer
+  - RPC_SendPlayerMovement
+  - SyncWalkingLeft
+  - SyncWalkingRight
+  - SyncPositionAndRotation
+  - SyncPosition
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

@@ -7,6 +7,7 @@ public class ActiveDesactiveObject : MonoBehaviour
     [SerializeField] private GameObject gameObject;
     [SerializeField] private GameObject gameObject2;
     [SerializeField] private GameObject avatar;
+    [SerializeField] private GameObject custom;
 
     public void ActiveObj()
     {
@@ -14,5 +15,11 @@ public class ActiveDesactiveObject : MonoBehaviour
         gameObject2.SetActive(false);
         avatar.SetActive(false);
     }
-   
+
+    public void ActObj()
+    {
+        gameObject.SetActive(true);
+        custom.SetActive(false);
+    }
+
 }

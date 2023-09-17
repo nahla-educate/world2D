@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5018210240602169237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5018210240602168939}
+  - component: {fileID: 5018210240602168938}
+  m_Layer: 0
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5018210240602168939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5018210240602169237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.5869155, y: -15.216126, z: -0.03125157}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5018210240602168938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5018210240602169237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa41652854959844b4a794eec9048c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatar: {fileID: 0}
+  hairColors:
+  - {r: 0.41176474, g: 0.35686275, b: 0.3254902, a: 1}
+  - {r: 0.6627451, g: 0.6, b: 0.57254905, a: 1}
+  - {r: 0.77647066, g: 0.70980394, b: 0.7019608, a: 1}
+  - {r: 0.30980393, g: 0.25882354, b: 0.20392159, a: 1}
+  - {r: 0.54509807, g: 0.43529415, b: 0.34901962, a: 1}
+  - {r: 0.7960785, g: 0.75294125, b: 0.6745098, a: 1}
+  - {r: 0.52156866, g: 0.30980393, b: 0.22352943, a: 1}
+  - {r: 0.6, g: 0.38823533, b: 0.2509804, a: 1}
+  - {r: 0.82745105, g: 0.72156864, b: 0.60784316, a: 1}
+  - {r: 0.15686275, g: 0.1254902, b: 0.15294118, a: 1}
+  - {r: 0.28235295, g: 0.2392157, b: 0.23137257, a: 1}
+  - {r: 0.80392164, g: 0.68235296, b: 0.5529412, a: 1}
+  hairButton: {fileID: 0}

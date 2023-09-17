@@ -27,8 +27,10 @@ public class UIDisplayFriends : MonoBehaviour
 
         foreach(FriendInfo friend in friends)
         {
+            Debug.Log("friends");
             UIFRiend uifriend = Instantiate(uiFriendPrefab, friendContainer);
             uifriend.Initialize(friend);
+            Debug.Log(uifriend);
         }
     }
 }

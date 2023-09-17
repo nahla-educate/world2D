@@ -6,36 +6,41 @@ public class AvatarSetup : MonoBehaviour
 {
     [SerializeField] GameObject[] genders;
 
-    [HideInInspector] public int shirtCount;
-    [SerializeField] GameObject[] fshirts;
+    [HideInInspector] public int eyesCount;
+    [SerializeField] GameObject[] fEyes;
 
     [HideInInspector] public int hairCount;
     [SerializeField] GameObject[] fHairs;
-    //[SerializeField] GameObject[] fShoes;
-    //[SerializeField] GameObject[] mShoes;
 
-    [SerializeField] SpriteRenderer[] skinColor;
-    [SerializeField] SpriteRenderer[] hairColor;
-    [SerializeField] SpriteRenderer[] shirtColor;
+    [HideInInspector] public int mouthCount;
+    [SerializeField] GameObject[] fMouth;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        shirtCount = fshirts.Length;
+        mouthCount = fMouth.Length;
+        eyesCount = fEyes.Length;
         hairCount = fHairs.Length;
     }
 
     public void SetAvatar(Data avatarData)
     {
         TurnOffAvatar();
-       Debug.Log(avatarData.hair);
+     // Debug.Log(avatarData.hair);
        // genders[avatarData.gender].SetActive(true);
-
-       // fshirts[avatarData.shirt].SetActive(true);
-
-        
+   
         fHairs[avatarData.hair].SetActive(true);
+        fEyes[avatarData.eyes].SetActive(true);
+        fMouth[avatarData.mouth].SetActive(true);
+
+        // Set hair color
+        foreach (SpriteRenderer hairRenderer in fHairs[avatarData.hair].GetComponentsInChildren<SpriteRenderer>())
+        {
+           // Debug.Log(avatarData.hairColor);
+            hairRenderer.color = avatarData.hairColor;
+        }
+
 
         /* foreach (SpriteRenderer s in skinColor)
          {
@@ -63,21 +68,23 @@ public class AvatarSetup : MonoBehaviour
             gender.SetActive(false);
         }
 
-        foreach (var shirt in fshirts)
-        {
-            shirt.SetActive(false);
-        }
-
-
-
         foreach (var hair in fHairs)
         {
             hair.SetActive(false);
         }
 
+        foreach (var eyes in fEyes)
+        {
+            eyes.SetActive(false);
+        }
+
+        foreach (var mouth in fMouth)
+        {
+            mouth.SetActive(false);
+        }
 
 
-        // ... deactivate other components ...
+
     }
 
 

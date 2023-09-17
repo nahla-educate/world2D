@@ -10,7 +10,8 @@ public class PlayfabFriendController : MonoBehaviour
 {
     public static Action<List<FriendInfo>> OnFriendListUpdated = delegate { };
     private List<FriendInfo> friends;
-   
+    private bool isPhotonReady = false;
+
     private void Awake()
     {
         friends = new List<FriendInfo>();
@@ -28,9 +29,24 @@ public class PlayfabFriendController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Check if the player is logged in
+        if (PlayFabClientAPI.IsClientLoggedIn())
+        {
+            // If logged in, get the friends list
+            GetPlayfabFriends();
+        }
     }
-   
+
+    public void ClickFriend()
+    {
+        if (PlayFabClientAPI.IsClientLoggedIn())
+        {
+            // If logged in, get the friends list
+            GetPlayfabFriends();
+        }
+    }
+
+
     private void HandleAddPlayfabFriend(string name)
     {
         var request = new AddFriendRequest { FriendTitleDisplayName = name };
@@ -46,7 +62,14 @@ public class PlayfabFriendController : MonoBehaviour
 
     private void HandleGetFriends()
     {
-        GetPlayfabFriends();
+        if (isPhotonReady)
+        {
+            GetPlayfabFriends();
+        }
+        else
+        {
+            Debug.LogWarning("Photon is not ready yet. Wait for the connection to be established.");
+        }
     }
     private void GetPlayfabFriends()
     {
@@ -77,6 +100,10 @@ public class PlayfabFriendController : MonoBehaviour
     private void OnFailure(PlayFabError error)
     {
         Debug.Log($"error: {error.GenerateErrorReport()}");
+    }
+    private void OnConnectedToMaster()
+    {
+        isPhotonReady = true;
     }
 
 }

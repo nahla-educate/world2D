@@ -16,18 +16,35 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     public GameObject PrefabTank;
     public Transform SpawPoint;
     public Transform SpawPoint1;
+    [SerializeField] private Transform[] spawnPoints;
+
     [SerializeField] public GameObject PanelCreate;
+
+    [SerializeField] public float resizeFactor = 0.1f;
 
     // [SerializeField] private TMP_Text playerNameText;
 
     [SerializeField] public TMP_InputField input_Create;
     [SerializeField] public TMP_InputField input_Join; 
     [SerializeField] public TMP_InputField input_CreatePRoom;
+    [SerializeField] AU_PlayerController avatar;
 
 
     // List to store spawned players
     private List<GameObject> spawnedPlayers = new List<GameObject>();
+    
 
+    public void OnEnableButtonClicked()
+    {
+        avatar.isKeyboardInputEnabled = true;
+    }
+
+    /*private void ResizePlayer()
+    {
+        // Reduce the size of the player by the specified factor
+        transform.localScale = new Vector3(resizeFactor, resizeFactor, resizeFactor);
+    }
+    */
 
     #region Unity Method
     private void Awake()
@@ -52,6 +69,7 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
 
     private void CreatePhotonRoom(string roomName, bool isRequestRoom)
     {
+        Debug.Log("noo");
         RoomOptions ro = new RoomOptions
         {
             IsOpen = true,
@@ -124,11 +142,36 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     }
     #endregion
     #region Public Methods
+
+    public void LeaveBtn()
+    {
+        PhotonNetwork.LeaveRoom();
+
+    }
+
+    public void DisconnectBtn()
+    {
+        PhotonNetwork.Disconnect();
+
+    }
+
+
+    [PunRPC]
+    public void ResizePlayer(GameObject player)
+    {
+        //player.transform.localScale = new Vector3(resizeFactor, resizeFactor, resizeFactor);
+        player.transform.localScale = new Vector3(resizeFactor, resizeFactor, resizeFactor);
+        
+    }
+
+
     public void OnConnectedRoomClicked(string roomName)
     {
         if (isConnectedToMaster) // Ensure you're connected to the master server
         {
+            Debug.Log("hiiiii");
             CreatePhotonRoom(roomName, false);
+            Debug.Log("hhhhhhhhhhh");
 
             SaveRoomInfo(roomName, false); // Save the room as a public room
 
@@ -139,12 +182,19 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
         }
 
     }
+    /*private void ResizePlayer(GameObject player)
+    {
+        // Reduce the size of the player by the specified factor
+        player.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+    }*/
+    
 
 
     public void CreateRoom()
     { //PhotonNetwork.CreateRoom(input_Create.text);
-        PanelCreate.SetActive(false);
-        string roomName = input_Create.text.Trim();
+       // PanelCreate.SetActive(false);
+       // ResizePlayer();
+        string roomName = "RoomOne";
         if (!string.IsNullOrEmpty(roomName))
         {
             CreatePhotonRoom(roomName, false);
@@ -161,6 +211,7 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     public void CreateRequestRoom()
     {
         string roomName = input_CreatePRoom.text.Trim();
+       // ResizePlayer();
         RoomOptions roomOptions = new RoomOptions
         {
             IsOpen = true,
@@ -176,7 +227,7 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
 
     public void JoinRoom()
     {
-        PhotonNetwork.JoinRoom(input_Join.text);
+        PhotonNetwork.JoinRoom("RoomOne");
     }
 
    
@@ -193,6 +244,21 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
             Debug.LogError("Not connected to the master server yet!");
         }
        
+    }
+    public void CreateOrJoinRoomOne()
+    {
+        string roomName = "roomone";
+
+        if (isConnectedToMaster)
+        {
+            // Try to join or create the room
+            PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = 4 }, TypedLobby.Default);
+            Debug.Log("Connected");
+        }
+        else
+        {
+            Debug.LogError("Not connected to the master server yet!");
+        }
     }
 
     private IEnumerator DelayedJoin(string roomName)
@@ -251,6 +317,37 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     }
     IEnumerator SpawPlayer()
     {
+        Debug.Log($"You have joined the Photon room {PhotonNetwork.CurrentRoom.Name}");
+
+        // Get the index of the current player in the room
+        int playerIndex = PhotonNetwork.PlayerList.Length - 1;
+
+        
+
+
+        // Check if the player index is within the bounds of the spawnPoints array
+        if (playerIndex < spawnPoints.Length)
+        {
+            // Use the assigned spawn point for the player
+            Transform spawnPoint = spawnPoints[playerIndex];
+            GameObject myPlayer = PhotonNetwork.Instantiate(Path.Combine("Prefabs", "Avatar"), spawnPoint.position, Quaternion.identity, 0) as GameObject;
+            foreach (var player in spawnedPlayers)
+            {
+                // Resize all players except the local player
+                player.GetPhotonView().RPC("ResizePlayer", RpcTarget.OthersBuffered, myPlayer);
+
+            }
+            spawnedPlayers.Add(myPlayer); // Add the spawned player to the list
+            ResizePlayer(myPlayer);
+
+            // Update the names of all spawned players
+            UpdateSpawnedPlayerNames();
+        }
+        else
+        {
+            Debug.LogError("Not enough spawn points for all players.");
+        }
+        yield return new WaitForSeconds(5);
         /*  Transform Sp;
           if (PhotonNetwork.PlayerList.Length <= 1)
           {
@@ -264,15 +361,15 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
           playerNameText.text = PhotonNetwork.LocalPlayer.NickName;
 
           yield return new WaitForSeconds(5);*/
-        Transform spawnPoint = PhotonNetwork.PlayerList.Length <= 1 ? SpawPoint : SpawPoint1;
+        /*  Transform spawnPoint = PhotonNetwork.PlayerList.Length <= 1 ? SpawPoint : SpawPoint1;
 
-        GameObject myPlayer = PhotonNetwork.Instantiate(Path.Combine("Prefabs", "Avatar"), spawnPoint.position, Quaternion.identity, 0) as GameObject;
-        spawnedPlayers.Add(myPlayer); // Add the spawned player to the list
+          GameObject myPlayer = PhotonNetwork.Instantiate(Path.Combine("Prefabs", "Avatar"), spawnPoint.position, Quaternion.identity, 0) as GameObject;
+          spawnedPlayers.Add(myPlayer); // Add the spawned player to the list
 
-        // Update the names of all spawned players
-        UpdateSpawnedPlayerNames();
-
-        yield return new WaitForSeconds(5);
+          // Update the names of all spawned players
+          ResizePlayer(myPlayer);
+          UpdateSpawnedPlayerNames();
+        */
 
 
     }

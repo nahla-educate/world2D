@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Interactable
+  - DoorOne
+  - DoorTwo
+  - DoorThree
+  - DoorFour
+  - DoorFive
+  - DoorSix
+  - DoorSeven
+  - DoorEight
+  - DoorNine
+  - DoorTen
   layers:
   - Default
   - TransparentFX
@@ -12,7 +23,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - Objects
   - 
   - 
   - 
@@ -43,6 +54,9 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 4270883647
+    locked: 0
+  - name: Objects
+    uniqueID: 270061201
     locked: 0
   - name: Player
     uniqueID: 2792330993
