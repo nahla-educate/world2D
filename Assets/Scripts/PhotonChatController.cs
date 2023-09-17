@@ -16,10 +16,13 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     private ChatClient chatClient;
     private string recipient;
     private string currentChannel; // Track the current chat channel
+<<<<<<< HEAD
     bool isConnected;
 
     string currentChat;
     [SerializeField] Text chatDisplay;
+=======
+>>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
 
 
     [SerializeField] private InputField messageInputField;
@@ -140,6 +143,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
             }
         }
     }
+<<<<<<< HEAD
     public void SubmitPublicChatOnClick()
     {
         if (!string.IsNullOrEmpty(currentChat))
@@ -157,6 +161,8 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
             }
         }
     }
+=======
+>>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
 
 
 

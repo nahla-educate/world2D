@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Resources/MainWorld2D.prefab.meta
 guid: c92c816a9fc19d74fa906a1b57fe59fc
 PrefabImporter:
+========
+guid: 0dfe6e64fd793ea41a6fa43dfdfb1971
+folderAsset: yes
+DefaultImporter:
+>>>>>>>> 5ef3753343931c5f31f96651844b05317bb63430:Assets/Mad Scientist's Games.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

@@ -37,7 +37,11 @@ public class AvatarSetup : MonoBehaviour
         // Set hair color
         foreach (SpriteRenderer hairRenderer in fHairs[avatarData.hair].GetComponentsInChildren<SpriteRenderer>())
         {
+<<<<<<< HEAD
            // Debug.Log(avatarData.hairColor);
+=======
+            Debug.Log(avatarData.hairColor);
+>>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
             hairRenderer.color = avatarData.hairColor;
         }
 

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Interactable
+<<<<<<< HEAD
   - DoorOne
   - DoorTwo
   - DoorThree
@@ -15,6 +16,8 @@ TagManager:
   - DoorEight
   - DoorNine
   - DoorTen
+=======
+>>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
   layers:
   - Default
   - TransparentFX

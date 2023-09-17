@@ -1,6 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 00c924860f60d07429c8abd06a549dc6
 PrefabImporter:
+=======
+<<<<<<<< HEAD:Assets/TilemapPalette/New Palette.prefab.meta
+guid: 00c924860f60d07429c8abd06a549dc6
+PrefabImporter:
+========
+guid: bf1cd9e11a847aa4b93b762499e45ade
+DefaultImporter:
+>>>>>>>> 1a3acefc593800964f17581042da22bc5d080d24:Assets/Mad Scientist's Games/2D Kit - Top View Interior/Scenes/Demo scene.unity.meta
+>>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
   externalObjects: {}
   userData: 
   assetBundleName: 
