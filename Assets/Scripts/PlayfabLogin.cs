@@ -58,6 +58,9 @@ public class PlayfabLogin : MonoBehaviour
     {
         Debug.Log($"You have logged into playfab using custom id: {username}");
         UpdateDisplayName(username);
+
+        FindObjectOfType<Bridge>().SendToJS("Login success!");
+        
     }
 
     private void OnFailure(PlayFabError error)

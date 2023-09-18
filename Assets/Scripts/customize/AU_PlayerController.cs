@@ -16,7 +16,6 @@ public class AU_PlayerController : MonoBehaviour
     [SerializeField] Data myData;
     public Animator myAnim;
     public bool isKeyboardInputEnabled = true;
-<<<<<<< HEAD
     [SerializeField] public GameObject avatarToResize;
     [SerializeField] public float scaleFactor = 1.5f;
     [SerializeField] public GameObject roomOne;
@@ -217,8 +216,6 @@ public class AU_PlayerController : MonoBehaviour
 
          }
      }
-=======
->>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
 
 
 
@@ -294,10 +291,7 @@ public class AU_PlayerController : MonoBehaviour
     void Start()
     {
         myPV = GetComponent<PhotonView>();
-<<<<<<< HEAD
         myAnim = GetComponent<Animator>();
-=======
->>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
         //  myRB = GetComponent<Rigidbody>();
 
 
@@ -324,10 +318,6 @@ public class AU_PlayerController : MonoBehaviour
     }
 
     
-<<<<<<< HEAD
-=======
-
->>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
 
 
 
@@ -337,18 +327,8 @@ public class AU_PlayerController : MonoBehaviour
         {
             Debug.Log("walkin a");
             myAnim.SetBool("IsWalkingLeft", true); // Adjust the horizontal speed as needed
-<<<<<<< HEAD
             avatarRb.velocity = new Vector3(-15f, avatarRb.velocity.y, avatarRb.velocity.z);
             
-=======
-            avatarRb.velocity = new Vector3(-5f, avatarRb.velocity.y, avatarRb.velocity.z);
-            
-        }
-        else
-        {
-            
-            avatarRb.velocity = new Vector3(0f, avatarRb.velocity.y, avatarRb.velocity.z);
->>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
         }
        
 
@@ -401,11 +381,7 @@ public class AU_PlayerController : MonoBehaviour
             avatarRb.velocity = new Vector3(avatarRb.velocity.x, 0f, avatarRb.velocity.z);
 
         }
-<<<<<<< HEAD
     }*/
-=======
-    }
->>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
     
 
 
@@ -413,7 +389,6 @@ public class AU_PlayerController : MonoBehaviour
 
     void Update()
     {
-<<<<<<< HEAD
         if (myPV.IsMine)
         {
             if (isKeyboardInputEnabled == true)
@@ -478,65 +453,6 @@ public class AU_PlayerController : MonoBehaviour
 
         
 
-=======
-        if (!myPV.IsMine)
-            return;
-        if (isKeyboardInputEnabled == true)
-        {
-            // Process input only when keyboard input is enabled
-            movementInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Z))
-            {
-                myAnim.SetBool("IsWalkingLeft", true);
-                avatarRb.velocity = new Vector3(avatarRb.velocity.x, 5f, avatarRb.velocity.z); // Adjust the vertical speed as needed
-
-
-            }
-            else
-            {
-                myAnim.SetBool("IsWalkingLeft", false);
-                avatarRb.velocity = new Vector3(avatarRb.velocity.x, 0f, avatarRb.velocity.z);
-            }
-
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                myAnim.SetBool("IsWalkingRight", true);
-                avatarRb.velocity = new Vector3(5f, avatarRb.velocity.y, avatarRb.velocity.z); // Adjust the horizontal speed as needed
-            }
-            else
-            {
-                myAnim.SetBool("IsWalkingRight", false);
-                avatarRb.velocity = new Vector3(0f, avatarRb.velocity.y, avatarRb.velocity.z);
-            }
-            //down
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                myAnim.SetBool("IsWalkingLeft", true);
-                avatarRb.velocity = new Vector3(avatarRb.velocity.x, -5f, avatarRb.velocity.z); // Adjust the vertical speed as needed
-            }
-            else
-            {
-                myAnim.SetBool("IsWalkingLeft", false);
-                avatarRb.velocity = new Vector3(avatarRb.velocity.x, 0f, avatarRb.velocity.z);
-
-            }
-
-            //left
-            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Q))
-            {
-                Debug.Log("walkin a");
-                myAnim.SetBool("IsWalkingLeft", true); // Adjust the horizontal speed as needed
-                avatarRb.velocity = new Vector3(-5f, avatarRb.velocity.y, avatarRb.velocity.z);
-
-            }
-            else
-            {
-
-                avatarRb.velocity = new Vector3(0f, avatarRb.velocity.y, avatarRb.velocity.z);
-            }
-        }
-
->>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
         //  myAnim.SetFloat("Speed", movementInput.magnitude);
 
         /*

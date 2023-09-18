@@ -33,20 +33,6 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     // List to store spawned players
     private List<GameObject> spawnedPlayers = new List<GameObject>();
     
-<<<<<<< HEAD
-=======
-
-    public void OnEnableButtonClicked()
-    {
-        avatar.isKeyboardInputEnabled = true;
-    }
-
-    private void ResizePlayer()
-    {
-        // Reduce the size of the player by the specified factor
-        transform.localScale = new Vector3(resizeFactor, resizeFactor, resizeFactor);
-    }
->>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
 
     public void OnEnableButtonClicked()
     {
@@ -206,15 +192,9 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
 
     public void CreateRoom()
     { //PhotonNetwork.CreateRoom(input_Create.text);
-<<<<<<< HEAD
        // PanelCreate.SetActive(false);
        // ResizePlayer();
         string roomName = "RoomOne";
-=======
-        PanelCreate.SetActive(false);
-        ResizePlayer();
-        string roomName = input_Create.text.Trim();
->>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
         if (!string.IsNullOrEmpty(roomName))
         {
             CreatePhotonRoom(roomName, false);
@@ -231,11 +211,7 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     public void CreateRequestRoom()
     {
         string roomName = input_CreatePRoom.text.Trim();
-<<<<<<< HEAD
        // ResizePlayer();
-=======
-        ResizePlayer();
->>>>>>> 5ef3753343931c5f31f96651844b05317bb63430
         RoomOptions roomOptions = new RoomOptions
         {
             IsOpen = true,
