@@ -11,19 +11,19 @@ public class ActivePanels : MonoBehaviour
 
     [SerializeField] private GameObject mouthPanel;
     [SerializeField] private GameObject eyesPanel;
-    [SerializeField] private GameObject eyebrowsPanel;
+   //[SerializeField] private GameObject eyebrowsPanel;
 
     [SerializeField] private GameObject hairStylePanel;
     [SerializeField] private GameObject hairColorPanel;
 
     [SerializeField] private GameObject pantsPanel;
-    [SerializeField] private GameObject shoesPanel;
+   //[SerializeField] private GameObject shoesPanel;
     [SerializeField] private GameObject shirtPanel;
 
-    [SerializeField] private GameObject findRooms;
+    /*[SerializeField] private GameObject findRooms;
     [SerializeField] private GameObject createPublicRoom;
     [SerializeField] private GameObject createPrivateRoom;
-    [SerializeField] private GameObject chat;
+    [SerializeField] private GameObject chat;*/
 
 
     public void ActiveHair()
@@ -63,41 +63,41 @@ public class ActivePanels : MonoBehaviour
     {
         mouthPanel.SetActive(false);
         eyesPanel.SetActive(true);
-        eyebrowsPanel.SetActive(false);
+       // eyebrowsPanel.SetActive(false);
     }
 
     public void ActiveMouth()
     {
         mouthPanel.SetActive(true);
         eyesPanel.SetActive(false);
-        eyebrowsPanel.SetActive(false);
+       // eyebrowsPanel.SetActive(false);
     }
 
     public void ActiveEyebrows()
     {
         mouthPanel.SetActive(false);
         eyesPanel.SetActive(false);
-        eyebrowsPanel.SetActive(true);
+        //eyebrowsPanel.SetActive(true);
     }
     //clothes
     public void ActiveShoes()
     {
         pantsPanel.SetActive(false);
-        shoesPanel.SetActive(true);
+        //shoesPanel.SetActive(true);
         shirtPanel.SetActive(false);
     }
 
     public void ActivePants()
     {
         pantsPanel.SetActive(true);
-        shoesPanel.SetActive(false);
+        //shoesPanel.SetActive(false);
         shirtPanel.SetActive(false);
     }
 
     public void ActiveShirt()
     {
         pantsPanel.SetActive(false);
-        shoesPanel.SetActive(false);
+        //shoesPanel.SetActive(false);
         shirtPanel.SetActive(true);
     }
     //hair
@@ -114,7 +114,7 @@ public class ActivePanels : MonoBehaviour
     }
 
     //rooms
-    public void DisactiveFind()
+    /*public void DisactiveFind()
     {
         findRooms.SetActive(false);
     }
@@ -129,6 +129,6 @@ public class ActivePanels : MonoBehaviour
     {
         createPrivateRoom.SetActive(false);
         chat.SetActive(true);
-    }
+    }*/
 
 }

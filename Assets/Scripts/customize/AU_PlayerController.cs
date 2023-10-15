@@ -12,6 +12,7 @@ public class AU_PlayerController : MonoBehaviour
     public static AU_PlayerController localPlayer;
     private Vector3 networkedPosition;
 
+
     [SerializeField] AvatarSetup avatar;
     [SerializeField] Data myData;
     public Animator myAnim;
@@ -64,7 +65,7 @@ public class AU_PlayerController : MonoBehaviour
              avatara.SetActive(false);
              if (goToRoom != null)
              {
-                 goToRoom.OnConnectedRoomClicked("RoomOne");
+                 goToRoom.CreateOrJoinRoomOne();
              }
 
          }
@@ -79,7 +80,7 @@ public class AU_PlayerController : MonoBehaviour
              avatara.SetActive(false);
              if (goToRoom != null)
              {
-                 goToRoom.OnConnectedRoomClicked("RoomTwo");
+                goToRoom.CreateOrJoinRoomTwo();
              }
 
          }
@@ -94,7 +95,7 @@ public class AU_PlayerController : MonoBehaviour
              if (goToRoom != null)
              {
                 Debug.Log("create or join");
-                goToRoom.CreateOrJoinRoomOne();
+                goToRoom.CreateOrJoinRoomThree();
              }
          }
          else if (other.CompareTag("DoorFour"))
@@ -109,7 +110,7 @@ public class AU_PlayerController : MonoBehaviour
             avatara.SetActive(false);
              if (goToRoom != null)
              {
-                 goToRoom.OnConnectedRoomClicked("RoomFour");
+                 goToRoom.CreateOrJoinRoomFour();
              }
 
          }
@@ -124,7 +125,7 @@ public class AU_PlayerController : MonoBehaviour
              avatara.SetActive(false);
              if (goToRoom != null)
              {
-                 goToRoom.OnConnectedRoomClicked("RoomFive");
+                 goToRoom.CreateOrJoinRoomFive();
              }
 
          }
@@ -139,7 +140,7 @@ public class AU_PlayerController : MonoBehaviour
              avatara.SetActive(false);
              if (goToRoom != null)
              {
-                 goToRoom.OnConnectedRoomClicked("RoomSix");
+                 goToRoom.CreateOrJoinRoomSix();
              }
 
          }
@@ -154,7 +155,7 @@ public class AU_PlayerController : MonoBehaviour
              avatara.SetActive(false);
              if (goToRoom != null)
              {
-                 goToRoom.OnConnectedRoomClicked("RoomSeven");
+                 goToRoom.CreateOrJoinRoomSeven();
              }
 
          }
@@ -169,19 +170,7 @@ public class AU_PlayerController : MonoBehaviour
              avatara.SetActive(false);
              if (goToRoom != null)
              {
-                if (!PhotonNetwork.InRoom)
-                {
-                    Debug.Log("room vide.");
-                    // Create the room if the player is not already in a room
-                    goToRoom.CreateRoom();
-                    Debug.Log("room created.");
-                }
-                else
-                {
-                    Debug.Log("Player entered room");
-                    goToRoom.JoinRoom();
-                    Debug.Log("room joined");
-                }
+                goToRoom.CreateOrJoinRoomEight();
              }
 
          }
@@ -196,7 +185,7 @@ public class AU_PlayerController : MonoBehaviour
              avatara.SetActive(false);
              if (goToRoom != null)
              {
-                 goToRoom.OnConnectedRoomClicked("RoomNine");
+                 goToRoom.CreateOrJoinRoomNine();
              }
 
          }
@@ -211,7 +200,7 @@ public class AU_PlayerController : MonoBehaviour
              avatara.SetActive(false);
              if (goToRoom != null)
              {
-                 goToRoom.OnConnectedRoomClicked("RoomTen");
+                 goToRoom.CreateOrJoinRoomTen();
              }
 
          }
@@ -274,7 +263,7 @@ public class AU_PlayerController : MonoBehaviour
         }
     }
 
-    [PunRPC]
+    /*[PunRPC]
     private void SyncPosition(Vector3 position)
     {
         transform.position = position;
@@ -283,7 +272,7 @@ public class AU_PlayerController : MonoBehaviour
     public void UpdatePosition(Vector3 newPosition)
     {
         myPV.RPC("SyncPosition", RpcTarget.All, newPosition);
-    }
+    }*/
 
 
 

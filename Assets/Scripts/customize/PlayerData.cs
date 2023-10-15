@@ -31,16 +31,27 @@ public class Data
 
     public int gender;
 
-    public Color skinColor;
-
-    public int hair;
+    public Color skinColor;    
+    public Color lipsColor;
+    public Color eyesColor;
     public Color hairColor;
-
-    public int eyes;
-    public int mouth;
-
-
+    public Color pantsColor;
     public Color shirtColor;
+
+    public Color handLColor;
+    public Color handRColor;
+
+
+    public int skin;
+    public int mouth;
+    public int eyes;
+    public int hair;
+    public int pants;
+    public int shirt;
+
+    public int handL;
+    public int handR;
+
     //  public int pants;
     //  public Color pantsColor;
     // public int shoes;

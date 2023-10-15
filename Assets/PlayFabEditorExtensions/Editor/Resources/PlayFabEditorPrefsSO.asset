@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
   m_Name: PlayFabEditorPrefsSO
   m_EditorClassIdentifier: 
-  DevAccountEmail: aroua.nahla@isamm.u-manouba.tn
-  DevAccountToken: qhipq6qh7hc1wbh168thcmaau87nb3jrfchss6boynnfwb3gchi434wzi4w39bqfcji9ktxdb8kwq1fsfqwgxot87dujde4qdbr49dj7g8dsyw98gmsfpi3piff74xrewgqq15hwf6jau9qibtatb51q1toghmneskdxrn53efwntb5abubr13ndarxpbzqrjfism7ot
+  DevAccountEmail: na.aroua@gmail.com
+  DevAccountToken: fhce3oxh3k8bjbu6ojnhsrz99eye1benoj9ck586zmmygmoaqzdydkispa7rsuu3f74s5men3a7auq7fs6zotehqu81733omz54mqqmhjrqqeutn5q86nqo8hbhp1e5tn33bgrm897ow7i8kferrynt99ywp9pfghh16ay97eeza1gp1npwbxn3cdbxewq8f8fjjynyz
   AadAuthorization: 
-  SelectedStudio: 
+  SelectedStudio: Co-chat
   SdkPath: Assets/PlayFabSDK
   EdExPath: 
   LocalCloudScriptPath: 
   PanelIsShown: 0
-  curMainMenuIdx: 0
+  curMainMenuIdx: 1
   curSubMenuIdx: 0

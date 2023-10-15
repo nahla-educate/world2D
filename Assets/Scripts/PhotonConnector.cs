@@ -11,6 +11,11 @@ using ExitGames.Client.Photon;
 public class PhotonConnector : MonoBehaviourPunCallbacks
 {
     [SerializeField] private string nickname;
+
+
+    public AudioSource src;
+    public AudioClip loginSound, logoutSound, joinSound;
+
     public static Action GetPhotonFriends = delegate { };
     private bool isConnectedToMaster = true;
     public GameObject PrefabTank;
@@ -85,7 +90,7 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
         SaveRoomInfo(roomName, isRequestRoom);
     }
 
-    private void ConnectToPhoton(string nickname)
+    public void ConnectToPhoton(string nickname)
     {
         Debug.Log($"Connect to Photon as {nickname}");
         PhotonNetwork.AuthValues = new AuthenticationValues(nickname);
@@ -254,6 +259,164 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
             // Try to join or create the room
             PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = 4 }, TypedLobby.Default);
             Debug.Log("Connected");
+            src.clip = loginSound;
+            src.Play();
+        }
+        else
+        {
+            Debug.LogError("Not connected to the master server yet!");
+        }
+    }
+
+    public void CreateOrJoinRoomTwo()
+    {
+        string roomName = "roomtwo";
+
+        if (isConnectedToMaster)
+        {
+            // Try to join or create the room
+            PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = 4 }, TypedLobby.Default);
+            Debug.Log("Connected");
+            src.clip = loginSound;
+            src.Play();
+        }
+        else
+        {
+            Debug.LogError("Not connected to the master server yet!");
+        }
+    }
+
+    public void CreateOrJoinRoomThree()
+    {
+        string roomName = "roomthree";
+
+        if (isConnectedToMaster)
+        {
+            // Try to join or create the room
+            PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = 4 }, TypedLobby.Default);
+            Debug.Log("Connected");
+            src.clip = loginSound;
+            src.Play();
+        }
+        else
+        {
+            Debug.LogError("Not connected to the master server yet!");
+        }
+    }
+
+    public void CreateOrJoinRoomFour()
+    {
+        string roomName = "roomfour";
+
+        if (isConnectedToMaster)
+        {
+            // Try to join or create the room
+            PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = 4 }, TypedLobby.Default);
+            Debug.Log("Connected");
+            src.clip = loginSound;
+            src.Play();
+        }
+        else
+        {
+            Debug.LogError("Not connected to the master server yet!");
+        }
+    }
+    public void CreateOrJoinRoomFive()
+    {
+        string roomName = "roomfive";
+
+        if (isConnectedToMaster)
+        {
+            // Try to join or create the room
+            PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = 4 }, TypedLobby.Default);
+            Debug.Log("Connected");
+            src.clip = loginSound;
+            src.Play();
+        }
+        else
+        {
+            Debug.LogError("Not connected to the master server yet!");
+        }
+    }
+    public void CreateOrJoinRoomSix()
+    {
+        string roomName = "roomsix";
+
+        if (isConnectedToMaster)
+        {
+            // Try to join or create the room
+            PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = 4 }, TypedLobby.Default);
+            Debug.Log("Connected");
+            src.clip = loginSound;
+            src.Play();
+        }
+        else
+        {
+            Debug.LogError("Not connected to the master server yet!");
+        }
+    }
+    public void CreateOrJoinRoomSeven()
+    {
+        string roomName = "roomseven";
+
+        if (isConnectedToMaster)
+        {
+            // Try to join or create the room
+            PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = 4 }, TypedLobby.Default);
+            Debug.Log("Connected");
+            src.clip = loginSound;
+            src.Play();
+        }
+        else
+        {
+            Debug.LogError("Not connected to the master server yet!");
+        }
+    }
+    public void CreateOrJoinRoomEight()
+    {
+        string roomName = "roomeight";
+
+        if (isConnectedToMaster)
+        {
+            // Try to join or create the room
+            PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = 4 }, TypedLobby.Default);
+            Debug.Log("Connected");
+            src.clip = loginSound;
+            src.Play();
+        }
+        else
+        {
+            Debug.LogError("Not connected to the master server yet!");
+        }
+    }
+    public void CreateOrJoinRoomNine()
+    {
+        string roomName = "roomnine";
+
+        if (isConnectedToMaster)
+        {
+            // Try to join or create the room
+            PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = 4 }, TypedLobby.Default);
+            Debug.Log("Connected");
+            src.clip = loginSound;
+            src.Play();
+        }
+        else
+        {
+            Debug.LogError("Not connected to the master server yet!");
+        }
+    }
+    public void CreateOrJoinRoomTen()
+    {
+        string roomName = "roomten";
+
+        if (isConnectedToMaster)
+        {
+            // Try to join or create the room
+            PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = 4 }, TypedLobby.Default);
+            Debug.Log("Connected");
+            src.clip = loginSound;
+            src.Play();
         }
         else
         {
@@ -407,12 +570,16 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         Debug.Log($"Another Player has joined the room {newPlayer.UserId}");
+        src.clip = joinSound;
+        src.Play();
 
     }
     public override void OnPlayerLeftRoom(Player otherPlayer)
     {
         Debug.Log($" Player has left the room {otherPlayer.UserId}");
-       
+        src.clip = logoutSound;
+        src.Play();
+
     }
     public override void OnMasterClientSwitched(Player newMasterClient)
     {

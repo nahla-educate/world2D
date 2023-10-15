@@ -916,13 +916,13 @@ AnimationClip:
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: -8624616599934999286, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
+      value: {fileID: 3220628360340490107, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
     - time: 0.25
-      value: {fileID: -8624616599934999286, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
+      value: {fileID: 3220628360340490107, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
     - time: 0.65
-      value: {fileID: -8624616599934999286, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
+      value: {fileID: 3220628360340490107, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
     - time: 0.81666666
-      value: {fileID: -8624616599934999286, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
+      value: {fileID: 3220628360340490107, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
     attribute: m_Sprite
     path: GameObject/avatar-woman-mouth_1
     classID: 212
@@ -1170,10 +1170,10 @@ AnimationClip:
     - {fileID: 6614301648841994590, guid: 386af69735a17764a8838fd7ada0e26f, type: 3}
     - {fileID: 6614301648841994590, guid: 386af69735a17764a8838fd7ada0e26f, type: 3}
     - {fileID: 6614301648841994590, guid: 386af69735a17764a8838fd7ada0e26f, type: 3}
-    - {fileID: -8624616599934999286, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
-    - {fileID: -8624616599934999286, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
-    - {fileID: -8624616599934999286, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
-    - {fileID: -8624616599934999286, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
+    - {fileID: 3220628360340490107, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
+    - {fileID: 3220628360340490107, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
+    - {fileID: 3220628360340490107, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
+    - {fileID: 3220628360340490107, guid: a67868f81d3034543bdc7a52bb6e477e, type: 3}
     - {fileID: -3465951917655514925, guid: f67820a16e740c846bb6fe758c55f482, type: 3}
     - {fileID: -3465951917655514925, guid: f67820a16e740c846bb6fe758c55f482, type: 3}
     - {fileID: -3465951917655514925, guid: f67820a16e740c846bb6fe758c55f482, type: 3}
