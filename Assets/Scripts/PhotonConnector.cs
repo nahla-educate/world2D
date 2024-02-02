@@ -12,6 +12,8 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
 {
     [SerializeField] private string nickname;
 
+    public TextMeshProUGUI textMeshProName, nameAvatara;
+
 
     public AudioSource src;
     public AudioClip loginSound, logoutSound, joinSound;
@@ -59,7 +61,6 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
     }
     private void OnDestroy()
     {
-
         UIInvite.OnRoomInviteAccept -= HandleRoomInviteAccept;
     }
     private void Start()
@@ -96,9 +97,11 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
         PhotonNetwork.AuthValues = new AuthenticationValues(nickname);
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.NickName = nickname;
+        textMeshProName.text = nickname;
+        nameAvatara.text = nickname;
 
         // Clear the saved room name from PlayerPrefs
-       // PlayerPrefs.SetString("PHOTONROOM", "");
+        // PlayerPrefs.SetString("PHOTONROOM", "");
         PhotonNetwork.ConnectUsingSettings();
     }
 

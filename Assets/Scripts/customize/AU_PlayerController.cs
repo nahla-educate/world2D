@@ -5,55 +5,67 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AU_PlayerController : MonoBehaviour
 {
     PhotonView myPV;
     public static AU_PlayerController localPlayer;
     private Vector3 networkedPosition;
-
-
-    [SerializeField] AvatarSetup avatar;
-    [SerializeField] Data myData;
+    [SerializeField] private AvatarSetup avatar;
+    [SerializeField] private Data myData;
     public Animator myAnim;
-    public bool isKeyboardInputEnabled = true;
-    [SerializeField] public GameObject avatarToResize;
-    [SerializeField] public float scaleFactor = 1.5f;
-    [SerializeField] public GameObject roomOne;
-    [SerializeField] public GameObject roomTwo;
-    [SerializeField] public GameObject roomThree;
-    [SerializeField] public GameObject roomFour;
-    [SerializeField] public GameObject roomFive;
-    [SerializeField] public GameObject roomSix;
-    [SerializeField] public GameObject roomSeven;
-    [SerializeField] public GameObject roomEight;
-    [SerializeField] public GameObject roomNine;
-    [SerializeField] public GameObject roomTen;
-    [SerializeField] public GameObject map;
+    public bool isKeyboardInputEnabled = false;
+    public bool moveAV = false;
+    //public GameObject societyObject;
+    
+    [SerializeField] private GameObject avatarToResize;
+    [SerializeField] private float scaleFactor = 1.5f;
+    [SerializeField] private GameObject roomOne;
+    [SerializeField] private GameObject roomTwo;
+    [SerializeField] private GameObject roomThree;
+    [SerializeField] private GameObject roomFour;
+    [SerializeField] private GameObject roomFive;
+    [SerializeField] private GameObject roomSix;
+    [SerializeField] private GameObject roomSeven;
+    [SerializeField] private GameObject roomEight;
+    [SerializeField] private GameObject roomNine;
+    [SerializeField] private GameObject roomTen;
+    [SerializeField] private GameObject map;
+    [SerializeField] private GameObject panelMap;
 
-    [SerializeField] public GameObject avatara;
+    [SerializeField] private GameObject avatara;
+    [SerializeField] private GameObject listBtn;
+    [SerializeField] private GameObject chatPanel;
+    [SerializeField] private PhotonConnector goToRoom;
 
-    [SerializeField] public GameObject listBtn;
-    [SerializeField] public GameObject chatPanel;
-
-    [SerializeField] PhotonConnector goToRoom;
     private bool isWalkingLeft = false;
     private bool isWalkingRight = false;
 
-
-
-
     public void ResizeAvatar()
     {
+        avatarToResize.transform.localScale *= scaleFactor;
         if (avatarToResize != null)
         {
             avatarToResize.transform.localScale *= scaleFactor;
         }
     }
- 
+    /*  private void OnTriggerExit(Collider collision)
+      {
+          if (collision.CompareTag("Society"))
+          {
+              Debug.Log("Collision");
+          }
+      }*/
+   
 
-     void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
      {
+        Debug.Log("Triggered by ");
+        if (other.CompareTag("Society"))
+        {
+           // Debug.Log("Triggered by society");         
+        }
          if (other.CompareTag("DoorOne"))
          {
              Debug.Log("Player entered trigger zone 'DoorOne'.");
@@ -61,6 +73,7 @@ public class AU_PlayerController : MonoBehaviour
              listBtn.SetActive(true);
              chatPanel.SetActive(true);
              map.SetActive(false);
+             panelMap.SetActive(false);
 
              avatara.SetActive(false);
              if (goToRoom != null)
@@ -76,8 +89,9 @@ public class AU_PlayerController : MonoBehaviour
              listBtn.SetActive(true);
              chatPanel.SetActive(true);
              map.SetActive(false);
+            panelMap.SetActive(false);
 
-             avatara.SetActive(false);
+            avatara.SetActive(false);
              if (goToRoom != null)
              {
                 goToRoom.CreateOrJoinRoomTwo();
@@ -86,9 +100,10 @@ public class AU_PlayerController : MonoBehaviour
          }
          else if (other.CompareTag("DoorThree"))
          {
-             Debug.Log("Player entered trigger zone DoorThree.");
+           Debug.Log("Player entered trigger zone DoorThree.");
              map.SetActive(false);
-             roomThree.SetActive(true);
+            panelMap.SetActive(false);
+            roomThree.SetActive(true);
              listBtn.SetActive(true);
              chatPanel.SetActive(true);
              avatara.SetActive(false);
@@ -105,7 +120,7 @@ public class AU_PlayerController : MonoBehaviour
              listBtn.SetActive(true);
              chatPanel.SetActive(true);
              map.SetActive(false);
-             
+            panelMap.SetActive(false);
 
             avatara.SetActive(false);
              if (goToRoom != null)
@@ -119,7 +134,8 @@ public class AU_PlayerController : MonoBehaviour
              Debug.Log("Player entered trigger zone.");
              roomFive.SetActive(true);
              map.SetActive(false);
-             chatPanel.SetActive(true);
+            panelMap.SetActive(false);
+            chatPanel.SetActive(true);
              listBtn.SetActive(true);
 
              avatara.SetActive(false);
@@ -136,8 +152,9 @@ public class AU_PlayerController : MonoBehaviour
              listBtn.SetActive(true);
              chatPanel.SetActive(true);
              map.SetActive(false);
+            panelMap.SetActive(false);
 
-             avatara.SetActive(false);
+            avatara.SetActive(false);
              if (goToRoom != null)
              {
                  goToRoom.CreateOrJoinRoomSix();
@@ -151,8 +168,9 @@ public class AU_PlayerController : MonoBehaviour
              listBtn.SetActive(true);
              chatPanel.SetActive(true);
              map.SetActive(false);
+             panelMap.SetActive(false);
 
-             avatara.SetActive(false);
+            avatara.SetActive(false);
              if (goToRoom != null)
              {
                  goToRoom.CreateOrJoinRoomSeven();
@@ -166,8 +184,9 @@ public class AU_PlayerController : MonoBehaviour
              listBtn.SetActive(true);
              chatPanel.SetActive(true);
              map.SetActive(false);
+            panelMap.SetActive(false);
 
-             avatara.SetActive(false);
+            avatara.SetActive(false);
              if (goToRoom != null)
              {
                 goToRoom.CreateOrJoinRoomEight();
@@ -181,8 +200,9 @@ public class AU_PlayerController : MonoBehaviour
              chatPanel.SetActive(true);
              listBtn.SetActive(true);
              map.SetActive(false);
+            panelMap.SetActive(false);
 
-             avatara.SetActive(false);
+            avatara.SetActive(false);
              if (goToRoom != null)
              {
                  goToRoom.CreateOrJoinRoomNine();
@@ -196,8 +216,9 @@ public class AU_PlayerController : MonoBehaviour
              listBtn.SetActive(true);
              chatPanel.SetActive(true);
              map.SetActive(false);
+            panelMap.SetActive(false);
 
-             avatara.SetActive(false);
+            avatara.SetActive(false);
              if (goToRoom != null)
              {
                  goToRoom.CreateOrJoinRoomTen();
@@ -205,7 +226,7 @@ public class AU_PlayerController : MonoBehaviour
 
          }
      }
-
+   
 
 
     //components
@@ -216,12 +237,8 @@ public class AU_PlayerController : MonoBehaviour
     // [SerializeField] InputAction WASD;
     [SerializeField] float movementSpeed;
 
-    private Rigidbody avatarRb;
+    private Rigidbody2D avatarRb;
     private Vector3 initialPosition;
-
-
-
-
     /*
      private void OnEnable()
       {
@@ -232,8 +249,6 @@ public class AU_PlayerController : MonoBehaviour
       {
           WASD.Disable();
       }*/
-
-    // Implement the IPunObservable interface
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (!PhotonNetwork.IsConnected) // Check if not connected
@@ -241,7 +256,6 @@ public class AU_PlayerController : MonoBehaviour
 
         if (stream.IsWriting)
         {
-            // Send data over the network (write variables to the stream)
             stream.SendNext(JsonUtility.ToJson(myData)); // Convert myData to a JSON string and send it
 
             stream.SendNext(transform.position); // Send the position data
@@ -249,7 +263,6 @@ public class AU_PlayerController : MonoBehaviour
         }
         else
         {
-            // Receive data from the network (read variables from the stream)
             string receivedData = (string)stream.ReceiveNext(); // Receive the JSON string
             myData = JsonUtility.FromJson<Data>(receivedData); // Convert the JSON string back to myData object
             avatar.SetAvatar(myData); // Update the avatar appearance with the received data
@@ -262,7 +275,6 @@ public class AU_PlayerController : MonoBehaviour
             transform.rotation = receivedRotation;
         }
     }
-
     /*[PunRPC]
     private void SyncPosition(Vector3 position)
     {
@@ -281,8 +293,6 @@ public class AU_PlayerController : MonoBehaviour
     {
         myPV = GetComponent<PhotonView>();
         myAnim = GetComponent<Animator>();
-        //  myRB = GetComponent<Rigidbody>();
-
 
         if (myPV == null)
         {
@@ -293,11 +303,11 @@ public class AU_PlayerController : MonoBehaviour
         if (myPV.IsMine)
         {
             myAvatar = transform.GetChild(0);
-            avatarRb = GetComponent<Rigidbody>();
+            avatarRb = GetComponent<Rigidbody2D>();
             initialPosition = transform.position;
 
             localPlayer = this;
-            if (PhotonNetwork.IsConnected) // Check if connected before synchronizing
+            if (PhotonNetwork.IsConnected) //before synchronizing
             {
                 avatar.SetAvatar(PlayerData.instance.data);
                 SyncAvatar(PlayerData.instance);
@@ -305,118 +315,53 @@ public class AU_PlayerController : MonoBehaviour
         }
         
     }
-
-    
-
-
-
-  /*  public void MoveLeft()
-    {
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Q))
-        {
-            Debug.Log("walkin a");
-            myAnim.SetBool("IsWalkingLeft", true); // Adjust the horizontal speed as needed
-            avatarRb.velocity = new Vector3(-15f, avatarRb.velocity.y, avatarRb.velocity.z);
-            
-        }
-       
-
-    }
-
-
-    public void MoveRight()
-    {
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            myAnim.SetBool("IsWalkingRight", true);
-            avatarRb.velocity = new Vector3(5f, avatarRb.velocity.y, avatarRb.velocity.z); // Adjust the horizontal speed as needed
-        }
-        else
-        {
-            myAnim.SetBool("IsWalkingRight", false);
-            avatarRb.velocity = new Vector3(0f, avatarRb.velocity.y, avatarRb.velocity.z);
-        }
-
-
-    }
-
-    public void MoveUp()
-    {
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Z))
-        {
-            myAnim.SetBool("IsWalkingLeft", true);
-            avatarRb.velocity = new Vector3(avatarRb.velocity.x, 5f, avatarRb.velocity.z); // Adjust the vertical speed as needed
-          
-            
-        }
-        else
-        {
-            myAnim.SetBool("IsWalkingLeft", false);
-            avatarRb.velocity = new Vector3(avatarRb.velocity.x, 0f, avatarRb.velocity.z);
-        }
-
-    }
-
-    public void MoveDown()
-    {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            myAnim.SetBool("IsWalkingLeft", true);
-            avatarRb.velocity = new Vector3(avatarRb.velocity.x, -5f, avatarRb.velocity.z); // Adjust the vertical speed as needed
-        }
-        else
-        {
-            myAnim.SetBool("IsWalkingLeft", false);
-            avatarRb.velocity = new Vector3(avatarRb.velocity.x, 0f, avatarRb.velocity.z);
-
-        }
-    }*/
-    
-
-
-
-
+      
     void Update()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "MainMenu")
+        {
+            avatarToResize.transform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
+
+        }
+
         if (myPV.IsMine)
         {
-            if (isKeyboardInputEnabled == true)
-            {
                 // Process input only when keyboard input is enabled
                 movementInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
-                // Top (Upward movement)
+                // Top
                 if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Z))
                 {
                     myAnim.SetBool("IsWalkingLeft", true);
-                    avatarRb.velocity = new Vector3(avatarRb.velocity.x, 2f, avatarRb.velocity.z); // Adjust the vertical speed as needed
+                    avatarRb.velocity = new Vector2(avatarRb.velocity.x, 2f); 
                 }
                 else if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.Z))
                 {
                     myAnim.SetBool("IsWalkingLeft", false);
-                    avatarRb.velocity = new Vector3(avatarRb.velocity.x, 0f, avatarRb.velocity.z);
+                    avatarRb.velocity = new Vector2(avatarRb.velocity.x, 0f);
                 }
 
 
-                // Right (Rightward movement)
+                // Right
                 if (Input.GetKey(KeyCode.D))
                 {
                     myAnim.SetBool("IsWalkingRight", true);
                     SetWalkingRight(true);
-                    avatarRb.velocity = new Vector3(2f, avatarRb.velocity.y, avatarRb.velocity.z); // Adjust the horizontal speed as needed
+                    avatarRb.velocity = new Vector2(2f, avatarRb.velocity.y); 
                 }
                 else if (!Input.GetKey(KeyCode.D))
                 {
                     myAnim.SetBool("IsWalkingRight", false);
                     SetWalkingRight(false);
-                    avatarRb.velocity = new Vector3(0f, avatarRb.velocity.y, avatarRb.velocity.z);
+                    avatarRb.velocity = new Vector2(0f, avatarRb.velocity.y);
                 }
 
-                // Down (Downward movement)
+                // Down
                 if (Input.GetKey(KeyCode.S))
                 {
                     myAnim.SetBool("IsWalkingLeft", true);
-                    avatarRb.velocity = new Vector3(avatarRb.velocity.x, -2f, avatarRb.velocity.z); // Adjust the vertical speed as needed
+                    avatarRb.velocity = new Vector2(avatarRb.velocity.x, -2f); 
                 }
                 else if (!Input.GetKey(KeyCode.S))
                 {
@@ -424,23 +369,19 @@ public class AU_PlayerController : MonoBehaviour
                 }
 
 
-                // Left (Leftward movement)
+                // Left
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.Q))
                 {
                     myAnim.SetBool("IsWalkingLeft", true);
                     SetWalkingLeft(true);
-                    avatarRb.velocity = new Vector3(-2f, avatarRb.velocity.y, avatarRb.velocity.z); // Adjust the horizontal speed as needed
+                    avatarRb.velocity = new Vector2(-2f, avatarRb.velocity.y);
                 }
                 else if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.Q))
                 {
                     myAnim.SetBool("IsWalkingLeft", false);
                     SetWalkingLeft(false);
                 }
-
-            }
-        }
-
-        
+        }      
 
         //  myAnim.SetFloat("Speed", movementInput.magnitude);
 
@@ -451,9 +392,12 @@ public class AU_PlayerController : MonoBehaviour
                movementInput = WASD.ReadValue<Vector2>();
               myAvatar.localScale = new Vector2(-Mathf.Sign(movementInput.x), 1);
               //Debug.Log("mouvex" + movementInput);
-              //Debug.Log("mouvelo" + myAvatar.localScale);
           }
           myAnim.SetFloat("Speed", movementInput.magnitude);*/
+    }
+    public void CanMove()
+    {
+        moveAV = !moveAV;
     }
 
     private void SetWalkingLeft(bool walking)
@@ -461,7 +405,7 @@ public class AU_PlayerController : MonoBehaviour
         isWalkingLeft = walking;
         myAnim.SetBool("IsWalkingLeft", walking);
 
-        // Synchronize the animation state over the network using an RPC
+        // Synchronize the animation
         myPV.RPC("SyncWalkingLeft", RpcTarget.Others, walking);
     }
 
@@ -470,48 +414,32 @@ public class AU_PlayerController : MonoBehaviour
         isWalkingRight = walking;
         myAnim.SetBool("IsWalkingRight", walking);
 
-        // Synchronize the animation state over the network using an RPC
+        // Synchronize the animation
         myPV.RPC("SyncWalkingRight", RpcTarget.Others, walking);
     }
 
-    // RPC method to receive and apply synchronized walking left animation state
     [PunRPC]
     private void SyncWalkingLeft(bool walking)
     {
         myAnim.SetBool("IsWalkingLeft", walking);
     }
 
-    // RPC method to receive and apply synchronized walking right animation state
     [PunRPC]
     private void SyncWalkingRight(bool walking)
     {
         myAnim.SetBool("IsWalkingRight", walking);
-    }
+    }   
 
-
-    /* private void FixedUpdate()
-     {
-          if (!myPV.IsMine)
-              return;
-          //myRB.velocity = movementInput * movementSpeed;
-           Vector3 newPosition = myAvatar.position + new Vector3(movementInput.x, movementInput.y, 0f);
-           myRB.MovePosition(newPosition);
-           Debug.Log("new position" + newPosition);      
-
-
-     }*/
-
-    // Synchronize the avatar appearance data over the network
     public void SyncAvatar(PlayerData data)
     {
-        if (PhotonNetwork.IsConnected) // Check if connected before synchronizing
+        if (PhotonNetwork.IsConnected) //before synchronizing
         {
             string syncString = data.AvatarToString();
             myPV.RPC("RPC_SyncAvatar", RpcTarget.OthersBuffered, syncString);
         }
     }
 
-    // RPC method to receive and apply synchronized avatar appearance data
+    // synchronized avatar appearance data
     [PunRPC]
     void RPC_SyncAvatar(string data)
     {

@@ -41,7 +41,7 @@ public class CharacterCustumizer : MonoBehaviour
         PlayerData.instance.data.hairColor = hairColors[2]; // You can change the index to your desired default color.
         PlayerData.instance.data.lipsColor = lipsColors[2];
         PlayerData.instance.data.eyesColor = eyesColors[2];
-        PlayerData.instance.data.skinColor = skinColors[2];
+        PlayerData.instance.data.skinColor = skinColors[11];
         PlayerData.instance.data.handLColor = handLColors[2];
         PlayerData.instance.data.handRColor = handRColors[2];
         PlayerData.instance.data.pantsColor = pantsColors[2];

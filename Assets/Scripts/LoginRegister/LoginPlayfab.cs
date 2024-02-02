@@ -14,10 +14,13 @@ public class LoginPlayfab : MonoBehaviour
     public AudioSource src;
     public AudioClip loginSound, errorSound, warnSound;
 
+    public GameObject panel;
+
     private bool isPasswordShown = false;
     [SerializeField] Text MessageText;
     [SerializeField] Text LoginText;
     [SerializeField] Text PwdMessageText;
+    [SerializeField] Text MailMessageText;
     [SerializeField] Text UsernameMessageText;
 
     [Header("Login")]
@@ -35,33 +38,68 @@ public class LoginPlayfab : MonoBehaviour
     [SerializeField] InputField EmailRecoveryInput;
     [SerializeField] GameObject RecoveryPage;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     #region Buttom Functions
+    /*private bool IsValidEmail(string email)
+    {
+        try
+        {
+            var mailAddress = new System.Net.Mail.MailAddress(email);
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
+    }*/
     private bool IsValidForm()
     {
         bool isValid = false;
         string password = PwdRegisterInput.text;
         string username = UsernameRegisterInput.text;
-        if (password.Length < 6)
+        string email = MailLoginInput.text;
+        if (email.Length == 0)
+        {
+            src.clip = errorSound;
+            src.Play();
+            MailMessageText.text = "Email is required.";
+        }
+        else
+        {
+            MailMessageText.text = "";
+        }
+        /* else if (!IsValidEmail(email))
+         {
+             src.clip = errorSound;
+             src.Play();
+             MailMessageText.text = "Please enter a valid email address.";
+         }
+         else
+         {
+             MailMessageText.text = "";
+         }*/
+        if (password.Length == 0)
+        {
+            src.clip = errorSound;
+            src.Play();
+            PwdMessageText.text = "Please enter your password. It is required.";
+        }
+        else if(password.Length > 0 && password.Length < 6)
         {
             src.clip = errorSound;
             src.Play();
             PwdMessageText.text = "Password is too short. It should be more than 6 characters.";
-        }else
+        }
+        else
         {
             PwdMessageText.text = "";
         }
-        if (username.Length < 3)
+        if (username.Length == 0)
+        {
+            src.clip = errorSound;
+            src.Play();
+            UsernameMessageText.text = "Please enter your name. It is required.";
+        }
+        else if (username.Length > 0 && username.Length < 3)
         {
             src.clip = errorSound;
             src.Play();
@@ -192,12 +230,13 @@ public class LoginPlayfab : MonoBehaviour
         MessageText.color = Color.green;
         MessageText.text = "Welcome " + name + " !";
         StartCoroutine(LoadNextScene());
+        panel.SetActive(false);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     IEnumerator LoadNextScene()
     {
         yield return new WaitForSeconds(2);
-        SceneController.LoadScene("MainMenu");
+        SceneController.LoadScene("MainMenu 1");
     }
 
 
@@ -221,8 +260,15 @@ public class LoginPlayfab : MonoBehaviour
     {
         MessageText.color = Color.green;
         MessageText.text = "New Account Is Created !";
-        OpenLoginPage();
+        StartCoroutine(LoadMenu());
     }
+
+    IEnumerator LoadMenu()
+    {
+        yield return new WaitForSeconds(2);
+        SceneController.LoadScene("Customize");
+    }
+
     public void OpenLoginPage()
     {
         LoginPage.SetActive(true);

@@ -24,6 +24,14 @@ public class PlayerData : MonoBehaviour
         string returnString = JsonUtility.ToJson(PlayerData.instance.data);
         return returnString;
     }
+
+    // Add the SetAppearance method that accepts a JSON string.
+    public void SetAppearance(string jsonSerializedData)
+    {
+        // Deserialize the JSON string into the Data object.
+        data = JsonUtility.FromJson<Data>(jsonSerializedData);
+        Debug.Log(jsonSerializedData);
+    }
 }
 public class Data
 {

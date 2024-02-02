@@ -15,6 +15,7 @@ TagManager:
   - DoorEight
   - DoorNine
   - DoorTen
+  - Society
   layers:
   - Default
   - TransparentFX
